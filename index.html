@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary-btn: #4234F2;
+        --color-primary-text: #1D1D1C;
+      }
+    </style>
+    <link rel="stylesheet" href="./assets/css/style.css"></link>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>BigLeads</title>
+  </head>
+  <body class="">
+    <nav class="fixed top-0 left-0 right-0 bg-white py-5 border-b border-primary-text flex">
+      <div class="container flex gap-[6.25em] items-center">
+        <a href="#" class="w-[6.375em]">
+          <img src="./assets/images/logo.png" alt="BigLeads Logo" class="w-full">
+        </a>
+        <div class="flex justify-between items-center w-full leading-[100%]">
+          <ul class="flex gap-[2.5em] font-medium">
+            <li><a href="#" class="px-4 py-[.625em] text-[1.125em] text-primary-text">How it Works</a></li>
+            <li><a href="#">Success Stories</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+          <div class="flex gap-2 items-center">
+            <button class="px-4 py-[.625em] font-medium text-[1.125em]">Sign In</button>
+            <button class="bg-primary-btn text-white px-[1.375em] py-[.75em] font-medium text-[1em] rounded-[0.625em]">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="bg-[#FFFDF3] pt-[11.8em] pb-[3.125em] bg-header">
+      <div class="container mid">
+        <div class="max-w-[46.7em] mx-auto text-center">
+          <h1 class="head-title">Get New Clients Curated Leads Weekly</h1>
+          <p class="mt-6 head-subtitle">Get 1,500+ handpicked startups who just raised millions, and want to outsource their needs to you.</p>
+          <form class="mt-[2.25em] flex justify-center items-center">
+            <div class="relative">
+              <input type="email" class="text-[.875em] w-[22.8125rem] h-[3.25rem] pl-[1em] placeholder:text-primary-text text-primary-text bg-white rounded-[.75rem] border border-[#E8E8E8] focus-visible:outline-primary-btn" placeholder="Your Business Email" required/>
+              <button class="bg-primary-btn text-white px-[1.375em] py-[.75em] font-medium text-[1em] rounded-[0.625em] absolute top-[0.375em] right-[0.375em] leading-[100%]">Subscribe</button>
+            </div>
+          </form>
+        </div>
+        <img src="./assets/images/head-img.png" class="w-full shadow-md mt-[5em] rounded-[.75em]"/>
+      </div>
+    </section>
+  </body>
+</html>
