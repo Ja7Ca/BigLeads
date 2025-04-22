@@ -1,31 +1,31 @@
 /* Font Face */
 @font-face {
   font-family: 'DP Saans';
-  src: url('../font/DP%20Saans/DP_saans_TRIAL/SaansMono-TRIAL-Light.ttf') format('truetype');
+  src: url('../font/DP%20Saans/DP_saans_TRIAL/Saans-TRIAL-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'DP Saans';
-  src: url('../font/DP%20Saans/DP_saans_TRIAL/SaansMono-TRIAL-Regular.ttf') format('truetype');
+  src: url('../font/DP%20Saans/DP_saans_TRIAL/Saans-TRIAL-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'DP Saans';
-  src: url('../font/DP%20Saans/DP_saans_TRIAL/SaansMono-TRIAL-Medium.ttf') format('truetype');
+  src: url('../font/DP%20Saans/DP_saans_TRIAL/Saans-TRIAL-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: 'DP Saans';
-  src: url('../font/DP%20Saans/DP_saans_TRIAL/SaansMono-TRIAL-SemiBold.ttf') format('truetype');
+  src: url('../font/DP%20Saans/DP_saans_TRIAL/Saans-TRIAL-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: 'DP Saans';
-  src: url('../font/DP%20Saans/DP_saans_TRIAL/SaansMono-TRIAL-Bold.ttf') format('truetype');
+  src: url('../font/DP%20Saans/DP_saans_TRIAL/Saans-TRIAL-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -83,6 +83,18 @@ body {
 }
 
 .head-subtitle{
+  font-size: 1.625em;
+  font-family: 'Vitruv', sans-serif;
+  line-height: 120%;
+}
+
+.section-title{
+  font-size: 2.75em;
+  font-weight: bold;
+  line-height: 120%;
+}
+
+.section-subtitle{
   font-size: 1.625em;
   font-family: 'Vitruv', sans-serif;
   line-height: 120%;
