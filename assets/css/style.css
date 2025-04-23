@@ -99,3 +99,14 @@ body {
   font-family: 'Vitruv', sans-serif;
   line-height: 120%;
 }
+
+.card-testi {
+  background-color: white; 
+  border-radius :1.25em; 
+  overflow: hidden;
+  width: 20.3125em;
+}
+
+.card-testi.active {
+  width: 24em;
+}
