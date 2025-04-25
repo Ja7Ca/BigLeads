@@ -37,6 +37,10 @@
   font-style: normal;
 }
 
+.font-vitruv {
+  font-family: 'Vitruv', sans-serif;
+}
+
 
 body {
   font-size: 1.25vw;
@@ -109,4 +113,29 @@ body {
 
 .card-testi.active {
   width: 24em;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list li {
+  padding-left: 2.25em;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  background-position: 0 0;
+  margin-bottom: 1em;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+}
+
+/* Replace the URL with your actual image links */
+.included {
+  background-image: url('../images/check-icon.svg'); /* Custom check image */
+}
+
+.excluded {
+  background-image: url('../images/cross-icon.svg'); /* Custom cross image */
 }
