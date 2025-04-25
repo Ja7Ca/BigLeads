@@ -14,6 +14,31 @@ $(".accordion").on('click', function(e) {
   $(".accordion").not($(this)).find(".line.abs").fadeIn(500)
 })
 
+// Hamburger Navbaar
+
+$("#hamburger").on('click', function(e) {
+  $(this).toggleClass("active")
+  if($(this).hasClass("active")) {
+    $("#nav-menu").css({
+      "display": "flex",
+      top: "auto",
+      bottom: "-350%",
+    })
+    $("body").addClass("overflow-hidden")
+  } else {
+    $("#nav-menu").css({
+      "display": "none",
+      top: "auto",
+      bottom: "100%",
+    })
+    $("body").removeClass("overflow-hidden")
+  }
+})
+
+$("#nav-menu ul li a").on('click', function(e) {
+  $("#hamburger").click()
+})
+
 // Aos
 
 AOS.init({

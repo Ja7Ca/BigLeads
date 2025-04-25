@@ -165,6 +165,14 @@ body {
   .section-subtitle{
     font-size: .875em;
   }
+
+  .card-testi{
+    width: 12.25em;
+  }
+
+  .card-testi.active {
+    width: 14.375em;
+  }
 }
 
 @media screen and (max-width: 375px) {
