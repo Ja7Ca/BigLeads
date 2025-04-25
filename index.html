@@ -21,62 +21,70 @@
       }
     </style>
     <link rel="stylesheet" href="./assets/css/style.css"></link>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>BigLeads</title>
   </head>
   <body class="">
-    <nav class="fixed top-0 left-0 right-0 bg-white py-5 border-b border-primary-text flex z-10">
-      <div class="container flex gap-[6.25em] items-center">
-        <a href="#" class="w-[6.375em]">
+    <nav class="fixed top-0 left-0 right-0 bg-white sm:py-5 py-[1.75em] border-b border-primary-text flex z-10" data-aos="fade-down" data-aos-duration="500">
+      <div class="container flex justify-between sm:justify-start gap-[6.25em] items-center">
+        <a href="#" class="sm:w-[6.375em] w-[5.3125em]">
           <img src="./assets/images/logo.png" alt="BigLeads Logo" class="w-full">
         </a>
-        <div class="flex justify-between items-center w-full leading-[100%]">
+        <div id="nav-menu" class="hidden sm:flex justify-between items-center w-full leading-[100%]">
           <ul class="flex gap-[2.5em] font-medium">
-            <li><a href="#" class="px-4 py-[.625em] text-[1.125em] text-primary-text">How it Works</a></li>
-            <li><a href="#">Success Stories</a></li>
-            <li><a href="#">Pricing</a></li>
+            <li><a href="#how" class="px-4 py-[.625em] text-[1.125em] text-primary-text">How it Works</a></li>
+            <li><a href="#stories">Success Stories</a></li>
+            <li><a href="#pricing">Pricing</a></li>
           </ul>
           <div class="flex gap-2 items-center">
             <button class="px-4 py-[.625em] font-medium text-[1.125em] cursor-pointer">Sign In</button>
             <button class="bg-primary-btn text-white px-[1.375em] py-[.75em] font-medium text-[1em] rounded-[0.625em] cursor-pointer">Get Started</button>
           </div>
         </div>
+        <div id="hamburger" class="flex sm:hidden flex-col gap-1">
+          <div class="w-6 h-[1px] rounded-[1.5em] bg-primary-text"></div>
+          <div class="w-6 h-[1px] rounded-[1.5em] bg-primary-text"></div>
+          <div class="w-6 h-[1px] rounded-[1.5em] bg-primary-text"></div>
+        </div>
       </div>
     </nav>
-    <section class="bg-[#FFFDF3] pt-[11.8em] pb-[3.125em] bg-header">
+    <section class="bg-[#FFFDF3] pt-[8em] pb-[3em] sm:pt-[11.8em] sm:pb-[3.125em] bg-header">
       <div class="container mid">
         <div class="max-w-[46.7em] mx-auto text-center">
-          <h1 class="head-title">Get New Clients Curated Leads Weekly</h1>
-          <p class="mt-6 head-subtitle">Get 1,500+ handpicked startups who just raised millions, and want to outsource their needs to you.</p>
-          <form class="mt-[2.25em] flex justify-center items-center">
-            <div class="relative">
-              <input type="email" class="text-[.875em] w-[22.8125rem] h-[3.25rem] pl-[1em] placeholder:text-primary-text text-primary-text bg-white rounded-[.75rem] border border-[#E8E8E8] focus-visible:outline-primary-btn" placeholder="Your Business Email" required/>
+          <h1 class="head-title" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">Get New Clients Curated Leads Weekly</h1>
+          <p class="mt-6 head-subtitle" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">Get 1,500+ handpicked startups who just raised millions, and want to outsource their needs to you.</p>
+          <form class="mt-[2.25em] flex mx-auto w-full sm:w-[22.8125em] items-center" data-aos="fade-up" data-aos-delay="600" data-aos-duration="500">
+            <div class="relative w-full">
+              <input type="email" class="text-[.875em] w-full h-[3.8em] pl-[1em] placeholder:text-primary-text text-primary-text bg-white rounded-[.75rem] border border-[#E8E8E8] focus-visible:outline-primary-btn" placeholder="Your Business Email" required/>
               <button class="bg-primary-btn text-white px-[1.375em] py-[.75em] font-medium text-[1em] rounded-[0.625em] absolute top-[0.375em] right-[0.375em] leading-[100%]">Subscribe</button>
             </div>
           </form>
         </div>
-        <img src="./assets/images/head-img.png" class="w-full shadow-md mt-[5em] rounded-[.75em]"/>
+        <img src="./assets/images/head-img.png" class="w-full shadow-md mt-[5em] rounded-[.75em]" data-aos="fade-in" data-aos-duration="500" data-aos-delay="800"/>
       </div>
     </section>
-    <section class="bg-[#FFFDF3] py-[6.25em]">
+    <section class="bg-[#FFFDF3] py-[3.125em] sm:py-[6.25em]">
       <div class="container">
         <div class="max-w-[54.5em] mx-auto flex flex-col gap-[1.5em] text-center text-primary-text">
-          <span class="text-[1.125em] leading-[100%]">RESULT? SALES EXCEEDED!</span>
-          <h2 class="section-title">Trusted by Thousands<br/>of Businesses Worldwide</h2>
-          <p class="section-subtitle">Join a growing community of businesses that have successfully scaled their revenue with high-quality leads and expert-backed services.</p>
+          <span class="text-[.75em] sm:text-[1.125em] leading-[100%]" data-aos="fade-up" data-aos-duration="500">RESULT? SALES EXCEEDED!</span>
+          <h2 class="section-title" data-aos="fade-up" data-aos-duration="500">Trusted by Thousands<br/>of Businesses Worldwide</h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-duration="500">Join a growing community of businesses that have successfully scaled their revenue with high-quality leads and expert-backed services.</p>
         </div>
-        <div class="mt-8 grid grid-cols-3 gap-6">
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6" data-aos="fade-in" data-aos-duration="500">
           <div class="p-[2.5em] rounded-[1em] text-center flex flex-col gap-[6em] bg-tropical">
-            <img src="./assets/images/partner1.png" alt="Logo 1" class="mx-auto h-8"/>
+            <img src="./assets/images/partner1.png" alt="Logo 1" class="mx-auto h-[2em]"/>
             <div class="flex flex-col gap-3">
-              <h3 class="text-[2em] font-medium text-white">“8x ROI by using BigLeads”</h3>
+              <h3 class="text-[1.5em] sm:text-[2em] font-medium text-white">“8x ROI by using BigLeads”</h3>
               <div class="flex justify-center items-center">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="size-[1.5em]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12.6456 1.77566C12.2372 1.58096 11.7628 1.58096 11.3545 1.77566C11.0014 1.94398 10.8068 2.23622 10.7087 2.39654C10.6072 2.56228 10.503 2.77341 10.4015 2.97919L8.24576 7.34648L3.42371 8.05129C3.19672 8.08442 2.96381 8.11841 2.7749 8.16384C2.59214 8.20779 2.25423 8.30284 1.98531 8.58668C1.67422 8.91505 1.52792 9.36626 1.58714 9.8147C1.63833 10.2023 1.85618 10.4776 1.97838 10.6204C2.10469 10.768 2.27334 10.9322 2.43771 11.0923L5.9255 14.4894L5.10254 19.2877C5.06369 19.5139 5.02383 19.746 5.00849 19.9398C4.99365 20.1272 4.97931 20.4781 5.16601 20.8218C5.38196 21.2194 5.76584 21.4983 6.21071 21.5807C6.59531 21.652 6.9246 21.5299 7.09823 21.4579C7.27778 21.3834 7.4862 21.2737 7.68936 21.1668L12 18.8999L16.3107 21.1668C16.5139 21.2737 16.7223 21.3834 16.9018 21.4579C17.0755 21.5299 17.4047 21.652 17.7893 21.5807C18.2342 21.4983 18.6181 21.2194 18.834 20.8218C19.0207 20.4781 19.0064 20.1272 18.9916 19.9398C18.9762 19.746 18.9364 19.5139 18.8975 19.2877L18.0745 14.4894L21.5624 11.0922C21.7267 10.9322 21.8954 10.768 22.0217 10.6204C22.1439 10.4776 22.3617 10.2023 22.4129 9.8147C22.4721 9.36626 22.3258 8.91505 22.0147 8.58668C21.7458 8.30284 21.4079 8.20779 21.2252 8.16384C21.0362 8.11841 20.8033 8.08442 20.5763 8.05129L15.7543 7.34648L13.5986 2.97927C13.4971 2.77347 13.3929 2.56229 13.2914 2.39654C13.1932 2.23622 12.9986 1.94398 12.6456 1.77566Z" fill="#FBBF24"/>
                 </svg>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="size-[1.5em]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12.6456 1.77566C12.2372 1.58096 11.7628 1.58096 11.3545 1.77566C11.0014 1.94398 10.8068 2.23622 10.7087 2.39654C10.6072 2.56228 10.503 2.77341 10.4015 2.97919L8.24576 7.34648L3.42371 8.05129C3.19672 8.08442 2.96381 8.11841 2.7749 8.16384C2.59214 8.20779 2.25423 8.30284 1.98531 8.58668C1.67422 8.91505 1.52792 9.36626 1.58714 9.8147C1.63833 10.2023 1.85618 10.4776 1.97838 10.6204C2.10469 10.768 2.27334 10.9322 2.43771 11.0923L5.9255 14.4894L5.10254 19.2877C5.06369 19.5139 5.02383 19.746 5.00849 19.9398C4.99365 20.1272 4.97931 20.4781 5.16601 20.8218C5.38196 21.2194 5.76584 21.4983 6.21071 21.5807C6.59531 21.652 6.9246 21.5299 7.09823 21.4579C7.27778 21.3834 7.4862 21.2737 7.68936 21.1668L12 18.8999L16.3107 21.1668C16.5139 21.2737 16.7223 21.3834 16.9018 21.4579C17.0755 21.5299 17.4047 21.652 17.7893 21.5807C18.2342 21.4983 18.6181 21.2194 18.834 20.8218C19.0207 20.4781 19.0064 20.1272 18.9916 19.9398C18.9762 19.746 18.9364 19.5139 18.8975 19.2877L18.0745 14.4894L21.5624 11.0922C21.7267 10.9322 21.8954 10.768 22.0217 10.6204C22.1439 10.4776 22.3617 10.2023 22.4129 9.8147C22.4721 9.36626 22.3258 8.91505 22.0147 8.58668C21.7458 8.30284 21.4079 8.20779 21.2252 8.16384C21.0362 8.11841 20.8033 8.08442 20.5763 8.05129L15.7543 7.34648L13.5986 2.97927C13.4971 2.77347 13.3929 2.56229 13.2914 2.39654C13.1932 2.23622 12.9986 1.94398 12.6456 1.77566Z" fill="#FBBF24"/>
                 </svg>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,14 +100,14 @@
             </div>
           </div>
           <div class="p-[2.5em] rounded-[1em] text-center flex flex-col gap-[6em] bg-colar-blaze">
-            <img src="./assets/images/partner2.png" alt="Logo 1" class="mx-auto h-8"/>
+            <img src="./assets/images/partner2.png" alt="Logo 1" class="mx-auto h-[2em]"/>
             <div class="flex flex-col gap-3">
-              <h3 class="text-[2em] font-medium text-white">“Closed $98k <br/>in 3-months”</h3>
+              <h3 class="text-[1.5em] sm:text-[2em] font-medium text-white">“Closed $98k <br/>in 3-months”</h3>
               <div class="flex justify-center items-center">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="size-[1.5em]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12.6456 1.77566C12.2372 1.58096 11.7628 1.58096 11.3545 1.77566C11.0014 1.94398 10.8068 2.23622 10.7087 2.39654C10.6072 2.56228 10.503 2.77341 10.4015 2.97919L8.24576 7.34648L3.42371 8.05129C3.19672 8.08442 2.96381 8.11841 2.7749 8.16384C2.59214 8.20779 2.25423 8.30284 1.98531 8.58668C1.67422 8.91505 1.52792 9.36626 1.58714 9.8147C1.63833 10.2023 1.85618 10.4776 1.97838 10.6204C2.10469 10.768 2.27334 10.9322 2.43771 11.0923L5.9255 14.4894L5.10254 19.2877C5.06369 19.5139 5.02383 19.746 5.00849 19.9398C4.99365 20.1272 4.97931 20.4781 5.16601 20.8218C5.38196 21.2194 5.76584 21.4983 6.21071 21.5807C6.59531 21.652 6.9246 21.5299 7.09823 21.4579C7.27778 21.3834 7.4862 21.2737 7.68936 21.1668L12 18.8999L16.3107 21.1668C16.5139 21.2737 16.7223 21.3834 16.9018 21.4579C17.0755 21.5299 17.4047 21.652 17.7893 21.5807C18.2342 21.4983 18.6181 21.2194 18.834 20.8218C19.0207 20.4781 19.0064 20.1272 18.9916 19.9398C18.9762 19.746 18.9364 19.5139 18.8975 19.2877L18.0745 14.4894L21.5624 11.0922C21.7267 10.9322 21.8954 10.768 22.0217 10.6204C22.1439 10.4776 22.3617 10.2023 22.4129 9.8147C22.4721 9.36626 22.3258 8.91505 22.0147 8.58668C21.7458 8.30284 21.4079 8.20779 21.2252 8.16384C21.0362 8.11841 20.8033 8.08442 20.5763 8.05129L15.7543 7.34648L13.5986 2.97927C13.4971 2.77347 13.3929 2.56229 13.2914 2.39654C13.1932 2.23622 12.9986 1.94398 12.6456 1.77566Z" fill="#FBBF24"/>
                 </svg>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="size-[1.5em]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12.6456 1.77566C12.2372 1.58096 11.7628 1.58096 11.3545 1.77566C11.0014 1.94398 10.8068 2.23622 10.7087 2.39654C10.6072 2.56228 10.503 2.77341 10.4015 2.97919L8.24576 7.34648L3.42371 8.05129C3.19672 8.08442 2.96381 8.11841 2.7749 8.16384C2.59214 8.20779 2.25423 8.30284 1.98531 8.58668C1.67422 8.91505 1.52792 9.36626 1.58714 9.8147C1.63833 10.2023 1.85618 10.4776 1.97838 10.6204C2.10469 10.768 2.27334 10.9322 2.43771 11.0923L5.9255 14.4894L5.10254 19.2877C5.06369 19.5139 5.02383 19.746 5.00849 19.9398C4.99365 20.1272 4.97931 20.4781 5.16601 20.8218C5.38196 21.2194 5.76584 21.4983 6.21071 21.5807C6.59531 21.652 6.9246 21.5299 7.09823 21.4579C7.27778 21.3834 7.4862 21.2737 7.68936 21.1668L12 18.8999L16.3107 21.1668C16.5139 21.2737 16.7223 21.3834 16.9018 21.4579C17.0755 21.5299 17.4047 21.652 17.7893 21.5807C18.2342 21.4983 18.6181 21.2194 18.834 20.8218C19.0207 20.4781 19.0064 20.1272 18.9916 19.9398C18.9762 19.746 18.9364 19.5139 18.8975 19.2877L18.0745 14.4894L21.5624 11.0922C21.7267 10.9322 21.8954 10.768 22.0217 10.6204C22.1439 10.4776 22.3617 10.2023 22.4129 9.8147C22.4721 9.36626 22.3258 8.91505 22.0147 8.58668C21.7458 8.30284 21.4079 8.20779 21.2252 8.16384C21.0362 8.11841 20.8033 8.08442 20.5763 8.05129L15.7543 7.34648L13.5986 2.97927C13.4971 2.77347 13.3929 2.56229 13.2914 2.39654C13.1932 2.23622 12.9986 1.94398 12.6456 1.77566Z" fill="#FBBF24"/>
                 </svg>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -115,14 +123,14 @@
             </div>
           </div>
           <div class="p-[2.5em] rounded-[1em] text-center flex flex-col gap-[6em] bg-gray">
-            <img src="./assets/images/partner3.png" alt="Logo 1" class="mx-auto h-8"/>
+            <img src="./assets/images/partner3.png" alt="Logo 1" class="mx-auto h-[2em]"/>
             <div class="flex flex-col gap-3">
-              <h3 class="text-[2em] font-medium text-white">“Wow, landed <br/>$411k deal”</h3>
+              <h3 class="text-[1.5em] sm:text-[2em] font-medium text-white">“Wow, landed <br/>$411k deal”</h3>
               <div class="flex justify-center items-center">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="size-[1.5em]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12.6456 1.77566C12.2372 1.58096 11.7628 1.58096 11.3545 1.77566C11.0014 1.94398 10.8068 2.23622 10.7087 2.39654C10.6072 2.56228 10.503 2.77341 10.4015 2.97919L8.24576 7.34648L3.42371 8.05129C3.19672 8.08442 2.96381 8.11841 2.7749 8.16384C2.59214 8.20779 2.25423 8.30284 1.98531 8.58668C1.67422 8.91505 1.52792 9.36626 1.58714 9.8147C1.63833 10.2023 1.85618 10.4776 1.97838 10.6204C2.10469 10.768 2.27334 10.9322 2.43771 11.0923L5.9255 14.4894L5.10254 19.2877C5.06369 19.5139 5.02383 19.746 5.00849 19.9398C4.99365 20.1272 4.97931 20.4781 5.16601 20.8218C5.38196 21.2194 5.76584 21.4983 6.21071 21.5807C6.59531 21.652 6.9246 21.5299 7.09823 21.4579C7.27778 21.3834 7.4862 21.2737 7.68936 21.1668L12 18.8999L16.3107 21.1668C16.5139 21.2737 16.7223 21.3834 16.9018 21.4579C17.0755 21.5299 17.4047 21.652 17.7893 21.5807C18.2342 21.4983 18.6181 21.2194 18.834 20.8218C19.0207 20.4781 19.0064 20.1272 18.9916 19.9398C18.9762 19.746 18.9364 19.5139 18.8975 19.2877L18.0745 14.4894L21.5624 11.0922C21.7267 10.9322 21.8954 10.768 22.0217 10.6204C22.1439 10.4776 22.3617 10.2023 22.4129 9.8147C22.4721 9.36626 22.3258 8.91505 22.0147 8.58668C21.7458 8.30284 21.4079 8.20779 21.2252 8.16384C21.0362 8.11841 20.8033 8.08442 20.5763 8.05129L15.7543 7.34648L13.5986 2.97927C13.4971 2.77347 13.3929 2.56229 13.2914 2.39654C13.1932 2.23622 12.9986 1.94398 12.6456 1.77566Z" fill="#FBBF24"/>
                 </svg>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="size-[1.5em]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12.6456 1.77566C12.2372 1.58096 11.7628 1.58096 11.3545 1.77566C11.0014 1.94398 10.8068 2.23622 10.7087 2.39654C10.6072 2.56228 10.503 2.77341 10.4015 2.97919L8.24576 7.34648L3.42371 8.05129C3.19672 8.08442 2.96381 8.11841 2.7749 8.16384C2.59214 8.20779 2.25423 8.30284 1.98531 8.58668C1.67422 8.91505 1.52792 9.36626 1.58714 9.8147C1.63833 10.2023 1.85618 10.4776 1.97838 10.6204C2.10469 10.768 2.27334 10.9322 2.43771 11.0923L5.9255 14.4894L5.10254 19.2877C5.06369 19.5139 5.02383 19.746 5.00849 19.9398C4.99365 20.1272 4.97931 20.4781 5.16601 20.8218C5.38196 21.2194 5.76584 21.4983 6.21071 21.5807C6.59531 21.652 6.9246 21.5299 7.09823 21.4579C7.27778 21.3834 7.4862 21.2737 7.68936 21.1668L12 18.8999L16.3107 21.1668C16.5139 21.2737 16.7223 21.3834 16.9018 21.4579C17.0755 21.5299 17.4047 21.652 17.7893 21.5807C18.2342 21.4983 18.6181 21.2194 18.834 20.8218C19.0207 20.4781 19.0064 20.1272 18.9916 19.9398C18.9762 19.746 18.9364 19.5139 18.8975 19.2877L18.0745 14.4894L21.5624 11.0922C21.7267 10.9322 21.8954 10.768 22.0217 10.6204C22.1439 10.4776 22.3617 10.2023 22.4129 9.8147C22.4721 9.36626 22.3258 8.91505 22.0147 8.58668C21.7458 8.30284 21.4079 8.20779 21.2252 8.16384C21.0362 8.11841 20.8033 8.08442 20.5763 8.05129L15.7543 7.34648L13.5986 2.97927C13.4971 2.77347 13.3929 2.56229 13.2914 2.39654C13.1932 2.23622 12.9986 1.94398 12.6456 1.77566Z" fill="#FBBF24"/>
                 </svg>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -140,71 +148,71 @@
         </div>
       </div>
     </section>
-    <section class="bg-tetriary pt-[6.875em] pb-[5em]">
-      <div class="container relative flex justify-center items-center">
-        <img src="./assets/images/banner-sec-vid.png" alt="Banner" class="mx-auto max-w-[66.25em]"/>
-        <div class="absolute size-[10em] rounded-full flex items-center justify-center bg-white shadow-lg hover:scale-105 active:scale-95 transition-transform cursor-pointer">
-          <svg class="size-[5em]" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <section class="bg-tetriary py-[3.125em] sm:pt-[6.875em] sm:pb-[5em]">
+      <div class="container relative flex justify-center items-center" data-aos="fade-in" data-aos-duration="500">
+        <img src="./assets/images/banner-sec-vid.png" alt="Banner" class="mx-auto max-w-[66.25em] w-full"/>
+        <div class="absolute size-[3.125em] sm:size-[10em] rounded-full flex items-center justify-center bg-white shadow-lg hover:scale-105 active:scale-95 transition-transform cursor-pointer">
+          <svg class="size-[1.5em] sm:size-[5em]" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M26.3532 9.22458C26.3926 9.25082 26.4321 9.27714 26.4717 9.30355L61.1946 32.4521C62.1993 33.1218 63.1308 33.7427 63.8463 34.3197C64.5929 34.9219 65.4731 35.7569 65.9797 36.9784C66.6493 38.593 66.6493 40.4076 65.9797 42.0222C65.4731 43.2438 64.5929 44.0788 63.8463 44.6809C63.1309 45.2579 62.1994 45.8788 61.1947 46.5484L26.3534 69.776C25.1253 70.5948 24.021 71.3311 23.084 71.8389C22.1463 72.3471 20.8592 72.9278 19.357 72.8381C17.4355 72.7234 15.6604 71.7734 14.4991 70.2382C13.5912 69.038 13.3604 67.645 13.2631 66.5829C13.1658 65.5216 13.1659 64.1945 13.166 62.7185L13.166 16.4245C13.166 16.3769 13.166 16.3295 13.166 16.2822C13.1659 14.8062 13.1658 13.479 13.2631 12.4177C13.3604 11.3556 13.5912 9.9626 14.4991 8.76242C15.6604 7.22726 17.4355 6.27729 19.357 6.16256C20.8592 6.07286 22.1463 6.65355 23.084 7.16171C24.021 7.66951 25.1252 8.40578 26.3532 9.22458Z" fill="#2B18D9"/>
           </svg>
         </div>
       </div>
     </section>
-    <section class="bg-secondary-bg py-[6.25em]">
+    <section class="bg-secondary-bg py-[3.125em] sm:py-[6.25em]">
       <div class="container flex flex-col gap-6 text-center items-center">
-        <h2 class="section-title">Are you a Saas, Sales Rep,<br/>Digital Agency or Freelancer?</h2>
-        <p class="section-subtitle">BigLeads was created for you.<br/>It'll save you time, money & increase your revenue.</p>
-        <button class="bg-primary-btn text-white px-[1.375em] py-[.75em] font-medium text-[1em] rounded-[0.625em] cursor-pointer mt-2">Sign up Now</button>
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="500">Are you a Saas, Sales Rep,<br/>Digital Agency or Freelancer?</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-duration="500">BigLeads was created for you.<br/>It'll save you time, money & increase your revenue.</p>
+        <button class="bg-primary-btn text-white px-[2em] sm:px-[1.375em] py-[.75em] font-medium text-[1em] rounded-[0.625em] cursor-pointer mt-2" data-aos="fade-up" data-aos-duration="500">Sign up Now</button>
       </div>
     </section>
-    <section class="bg-primary-bg py-[6.25em]">
+    <section class="bg-primary-bg py-[3.125em] sm:py-[6.25em]" id="how">
       <div class="container">
-        <div class="text-center flex justify-center items-center gap-3">
+        <div class="text-center flex justify-center items-center gap-3" data-aos="fade-up" data-aos-duration="500">
           <h2 class="section-title">How it works</h2>
           <h2 class="section-title py-[2px] px-5 text-teal border border-teal rounded-[7.75em]">basic</h2>
         </div>
         <div class="mt-8 grid grid-cols1 gap-4 max-w-[43.125em] mx-auto">
-          <div class="px-[2.625em] py-[.875em] rounded-[2.5em] bg-tetriary flex gap-10 items-center">
-            <p class="text-[8em] text-teal">01</p>
-            <p class="text-[2em] font-medium leading-[120%]">I Send you monthly, high quality leads</p>
+          <div class="px-[1.5em] sm:px-[2.625em] py-[2.25em] sm:py-[.875em] rounded-[1.5em] sm:rounded-[2.5em] bg-tetriary flex gap-10 items-center" data-aos="fade-up" data-aos-duration="500">
+            <p class="text-[3.125em] sm:text-[8em] font-light text-teal">01</p>
+            <p class="text-[1.25em] sm:text-[2em] font-medium leading-[120%]">I Send you monthly, high quality leads</p>
           </div>
-          <div class="px-[2.625em] py-[.875em] rounded-[2.5em] bg-gray-shade flex flex-row-reverse gap-10 items-center">
-            <p class="text-[8em] text-teal">02</p>
-            <p class="text-[2em] font-medium leading-[120%]">You can filter these leads based on your sales criteria</p>
+          <div class="px-[1.5em] sm:px-[2.625em] py-[2.25em] sm:py-[.875em] rounded-[1.5em] sm:rounded-[2.5em] bg-gray-shade flex flex-row-reverse gap-10 items-center" data-aos="fade-up" data-aos-duration="500">
+            <p class="text-[3.125em] sm:text-[8em] font-light text-teal">02</p>
+            <p class="text-[1.25em] sm:text-[2em] font-medium leading-[120%]">You can filter these leads based on your sales criteria</p>
           </div>
         </div>
-        <div class="text-center flex justify-center items-center gap-3 mt-[6.25em]">
+        <div class="text-center flex justify-center items-center gap-3 mt-[1.5em] sm:mt-[6.25em]" data-aos="fade-up" data-aos-duration="500">
           <h2 class="section-title">How it works </h2>
           <h2 class="section-title py-[2px] px-5 !leading-[100%] text-colar-blaze border border-colar-blaze rounded-[7.75em]">conceirge sales</h2>
         </div>
-        <div class="mt-8 grid grid-cols1 gap-4 max-w-[43.125em] mx-auto">
-          <div class="px-[2.625em] py-[.875em] rounded-[2.5em] bg-colar-blaze-shade flex gap-10 items-center">
-            <p class="text-[8em] text-colar-blaze">01</p>
-            <p class="text-[2em] font-medium leading-[120%]">Just once, you provide me your sales lead criteria</p>
+        <div class="mt-8 grid grid-cols1 gap-4 max-w-[43.125em] mx-auto" data-aos="fade-up" data-aos-duration="500">
+          <div class="px-[1.5em] sm:px-[2.625em] py-[2.25em] sm:py-[.875em] rounded-[1.5em] sm:rounded-[2.5em] bg-colar-blaze-shade flex gap-10 items-center">
+            <p class="text-[3.125em] sm:text-[8em] font-light text-colar-blaze">01</p>
+            <p class="text-[1.25em] sm:text-[2em] font-medium leading-[120%]">Just once, you provide me your sales lead criteria</p>
           </div>
-          <div class="px-[2.625em] py-[.875em] rounded-[2.5em] bg-golden-shade flex flex-row-reverse gap-10 items-center">
-            <p class="text-[8em] text-colar-blaze">02</p>
-            <p class="text-[2em] font-medium leading-[120%]">I filter the high quality leads based on your criteria</p>
+          <div class="px-[1.5em] sm:px-[2.625em] py-[2.25em] sm:py-[.875em] rounded-[1.5em] sm:rounded-[2.5em] bg-golden-shade flex flex-row-reverse gap-10 items-center" data-aos="fade-up" data-aos-duration="500">
+            <p class="text-[3.125em] sm:text-[8em] font-light text-colar-blaze">02</p>
+            <p class="text-[1.25em] sm:text-[2em] font-medium leading-[120%]">I filter the high quality leads based on your criteria</p>
           </div>
-          <div class="px-[2.625em] py-[.875em] rounded-[2.5em] bg-tetriary flex gap-10 items-center">
-            <p class="text-[8em] text-colar-blaze">03</p>
-            <p class="text-[2em] font-medium leading-[120%]">I contact the lead, on your behalf, and use your sales</p>
+          <div class="px-[1.5em] sm:px-[2.625em] py-[2.25em] sm:py-[.875em] rounded-[1.5em] sm:rounded-[2.5em] bg-tetriary flex gap-10 items-center" data-aos="fade-up" data-aos-duration="500">
+            <p class="text-[3.125em] sm:text-[8em] font-light text-colar-blaze">03</p>
+            <p class="text-[1.25em] sm:text-[2em] font-medium leading-[120%]">I contact the lead, on your behalf, and use your sales</p>
           </div>
-          <div class="px-[2.625em] py-[.875em] rounded-[2.5em] bg-gray-shade flex flex-row-reverse gap-10 items-center">
-            <p class="text-[8em] text-colar-blaze">04</p>
-            <p class="text-[2em] font-medium leading-[120%]">All qualified leads are handed over to you to close</p>
+          <div class="px-[1.5em] sm:px-[2.625em] py-[2.25em] sm:py-[.875em] rounded-[1.5em] sm:rounded-[2.5em] bg-gray-shade flex flex-row-reverse gap-10 items-center" data-aos="fade-up" data-aos-duration="500">
+            <p class="text-[3.125em] sm:text-[8em] font-light text-colar-blaze">04</p>
+            <p class="text-[1.25em] sm:text-[2em] font-medium leading-[120%]">All qualified leads are handed over to you to close</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="bg-secondary-bg py-[6.25em]">
+    <section class="bg-secondary-bg py-[3.125em] sm:py-[6.25em] overflow-hidden" id="stories">
       <div class="container">
         <div class="max-w-[54.5em] mx-auto flex flex-col gap-[1.5em] text-center text-primary-text">
-          <span class="text-[1.125em] leading-[100%]">RESULT? SALES EXCEEDED!</span>
-          <h2 class="section-title">Trusted by Thousands<br/>of Businesses Worldwide</h2>
-          <p class="section-subtitle">Join a growing community of businesses that have successfully scaled their revenue with high-quality leads and expert-backed services.</p>
+          <span class="text-[1.125em] leading-[100%]" data-aos="fade-up" data-aos-duration="500">RESULT? SALES EXCEEDED!</span>
+          <h2 class="section-title" data-aos="fade-up" data-aos-duration="500">Trusted by Thousands<br/>of Businesses Worldwide</h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-duration="500">Join a growing community of businesses that have successfully scaled their revenue with high-quality leads and expert-backed services.</p>
         </div>
-        <div class="mt-[5em] flex justify-center items-center gap-6" id="slider">
+        <div class="mt-[1.5em] sm:mt-[5em] flex justify-center items-center gap-6" id="slider" data-aos="fade-in" data-aos-duration="500">
           <div class="card-testi">
             <div class="p-[.875em] flex gap-[0.375em] items-center bg-[#FDFDFD] border-b border-[rgba(227,232,234,.3)]">
               <div class="size-[.5em] rounded-full border-1 border-[rgba(0,0,0,.1)] bg-[#ED6A5E]"></div>
@@ -316,85 +324,85 @@
         </div>
       </div>
     </section>
-    <section class="bg-tetriary py-[6.25em]">
+    <section class="bg-tetriary py-[3.125em] sm:py-[6.25em]">
       <div class="container">
         <div class="max-w-[54.5em] mx-auto flex flex-col gap-[1.5em] text-center text-primary-text">
-          <h2 class="section-title">Save Time & Money.<br/>Increase Revenue.</h2>
-          <p class="section-subtitle">We spend literally 10's of thousands dollars and 100s of hours, every month, gathering your curated leads.</p>
+          <h2 class="section-title" data-aos="fade-up" data-aos-duration="500">Save Time & Money.<br/>Increase Revenue.</h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-duration="500">We spend literally 10's of thousands dollars and 100s of hours, every month, gathering your curated leads.</p>
         </div>
       </div>
     </section>
-    <section class="bg-primary-bg py-[6.25em]">
-      <div class="container flex justify-between items-center">
-        <div class="flex flex-col items-start gap-6 max-w-[34.125em]">
-          <h2 class="section-title">We literally wrote the book on Sales Prospecting</h2>
-          <p class="section-subtitle">We spend literally thousand of dollars, and 100s of hours per</p>
-          <button class="bg-transparent text-primary-btn border border-primary-btn px-[1.255em] py-[.75em] font-medium text-[1em] rounded-[0.625em] cursor-pointer mt-2 leading-[100%]">Download E-Book</button>
+    <section class="bg-primary-bg py-[3.125em] sm:py-[6.25em]">
+      <div class="container flex flex-wrap gap-[1.5em] sm:gap-0 justify-between items-center">
+        <div class="flex flex-col items-start gap-[.75em] sm:gap-[1.5em] max-w-[34.125em]">
+          <h2 class="section-title" data-aos="fade-up" data-aos-duration="500">We literally wrote the book on Sales Prospecting</h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-duration="500">We spend literally thousand of dollars, and 100s of hours per</p>
+          <button class="bg-transparent text-primary-btn border border-primary-btn px-[1.255em] py-[.75em] font-medium text-[1em] rounded-[0.625em] cursor-pointer mt-2 leading-[100%]" data-aos="fade-in" data-aos-duration="500">Download E-Book</button>
         </div>
-        <img src="./assets/images/book.png" class="w-[24.25em] shadow-lg rounded-[.75em]">
+        <img src="./assets/images/book.png" class="mx-auto sm:mx-0 max-w-[21.4375em] sm:max-w-[24.25em] w-full shadow-lg rounded-[.75em]" data-aos="fade-left" data-aos-duration="500">
       </div>
     </section>
-    <section class="bg-tetriary py-[6.25em]">
+    <section class="bg-tetriary py-[3.125em] sm:py-[6.25em]" id="testi">
       <div class="container">
-        <h2 class="section-title text-center">100% Handpicked Leads. Seriously.</h2>
-        <div class="mt-8 flex justify-center items-center gap-[1.875em]">
-          <img src="./assets/images/Tweet1.png" class="w-full max-w-[23.75em]" />
-          <img src="./assets/images/Tweet2.png" class="w-full max-w-[23.75em]" />
-          <img src="./assets/images/Tweet3.png" class="w-full max-w-[23.75em]" />
+        <h2 class="section-title text-center" data-aos="fade-up" data-aos-duration="500">100% Handpicked Leads. Seriously.</h2>
+        <div class="mt-8 flex flex-wrap justify-center items-center gap-[1em] sm:gap-[1.875em]" data-aos="fade-up" data-aos-duration="500">
+          <img src="./assets/images/Tweet1.png" class="w-full max-w-none sm:max-w-[23.75em]" />
+          <img src="./assets/images/Tweet2.png" class="w-full max-w-none sm:max-w-[23.75em]" />
+          <img src="./assets/images/Tweet3.png" class="w-full max-w-none sm:max-w-[23.75em]" />
         </div>
       </div>
     </section>
-    <section class="bg-secondary-bg py-[6.25em]">
-      <div class="container flex items-center gap-[3.375em]">
+    <section class="bg-secondary-bg py-[3.125em] sm:py-[6.25em]">
+      <div class="container flex flex-col sm:flex-row items-center gap-[1em] sm:gap-[3.375em]">
         <div class="flex flex-col gap-4">
-          <h2 class="section-title">We make hard work, look simple</h2>
-          <p class="section-subtitle">This might appear as just a simple paid leads sheet, but it's not. This is an extremely manual labor intenstive task. We search news publications daily, looking for newly funded company.<br/><br/>We not only label what the company does, we also assess what systems they currently have in place. For example, do they already have a CMS in place - if not, that's an opporutnity.</p>
+          <h2 class="section-title" data-aos="fade-up" data-aos-duration="500">We make hard work, look simple</h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-duration="500">This might appear as just a simple paid leads sheet, but it's not. This is an extremely manual labor intenstive task. We search news publications daily, looking for newly funded company.<br/><br/>We not only label what the company does, we also assess what systems they currently have in place. For example, do they already have a CMS in place - if not, that's an opportunity.</p>
         </div>
         <img src="./assets/images/simple.png" class="max-w-[38.0625em] w-full shrink-0" />
       </div>
     </section>
-    <section class="bg-primary-bg py-[6.25em]">
+    <section class="bg-primary-bg py-[3.125em] sm:py-[6.25em]">
       <div class="container text-center">
-        <div class="max-w-[53.125em] mx-auto flex flex-col gap-4">
+        <div class="max-w-[53.125em] mx-auto flex flex-col gap-4" data-aos="fade-up" data-aos-duration="500">
           <h2 class="section-title">Stop wasting <span class="py-[2px] px-5 !leading-[90%] h-4 text-colar-blaze border border-colar-blaze rounded-[7.75em]">
-            <svg class="size-[1em] inline relative top-[-5px]" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="size-[1em] inline relative top-[-3px] sm:top-[-5px]" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M7.5 12.5V18.5M25.5 9.5V15.5M24 2C27.6731 2 29.6597 2.56214 30.6482 2.99816C30.7798 3.05623 30.8456 3.08526 31.0356 3.26656C31.1495 3.37523 31.3573 3.69409 31.4108 3.84213C31.5 4.08911 31.5 4.22411 31.5 4.49411V20.6167C31.5 21.9799 31.5 22.6614 31.2956 23.0118C31.0876 23.3681 30.8871 23.5338 30.4979 23.6708C30.1153 23.8054 29.3429 23.657 27.7983 23.3602C26.7171 23.1525 25.4348 23 24 23C19.5 23 15 26 9 26C5.32694 26 3.3403 25.4379 2.35182 25.0018C2.22018 24.9438 2.15437 24.9147 1.9644 24.7334C1.85053 24.6248 1.64268 24.3059 1.5892 24.1579C1.5 23.9109 1.5 23.7759 1.5 23.5059L1.5 7.38328C1.5 6.02013 1.5 5.33855 1.70442 4.98821C1.91235 4.63185 2.11289 4.46617 2.50209 4.32922C2.8847 4.19458 3.65705 4.34297 5.20174 4.63977C6.28293 4.84751 7.56522 5 9 5C13.5 5 18 2 24 2ZM20.25 14C20.25 16.0711 18.5711 17.75 16.5 17.75C14.4289 17.75 12.75 16.0711 12.75 14C12.75 11.9289 14.4289 10.25 16.5 10.25C18.5711 10.25 20.25 11.9289 20.25 14Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <p class="inline relative top-[-5px]">money</p></span> Use what works.</h2>
-          <p class="section-subtitle">No amount of AI, tech or automation can replace what has worked for decades. Which is old school labor intentsive lead generation. It's hard work, which is why people try to take shortcuts but it doesn't work. Outsource this hard work to us.</p>
+            <p class="inline relative top-[-3px] sm:top-[-5px]">money</p></span> Use what works.</h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-duration="500">No amount of AI, tech or automation can replace what has worked for decades. Which is old school labor intentsive lead generation. It's hard work, which is why people try to take shortcuts but it doesn't work. Outsource this hard work to us.</p>
         </div>
       </div>
     </section>
-    <section class="bg-tetriary py-[6.25em]">
+    <section class="bg-tetriary py-[3.125em] sm:py-[6.25em]">
       <div class="container">
-        <div class="max-w-[58.125em] mx-auto bg-white border border-[#1C1E1E] rounded-[1.875em] p-[2.5em] flex flex-col gap-[1.25em]">
-          <p class="section-subtitle font-bold">Hi, I'm Lawrence,</p>
-          <p class="text-[1.25em] leading-[130%] text-primary-text font-vitruv">
+        <div class="max-w-[58.125em] mx-auto bg-white border-2 sm:border border-[#1C1E1E] rounded-[1.875em] p-[1.5em] sm:p-[2.5em] flex flex-col gap-[1.25em]" data-aos="fade-up" data-aos-duration="500">
+          <p class="text-[1.25em] sm:text-[1.625em] font-vitruv font-bold">Hi, I'm Lawrence,</p>
+          <p class="text-[.75em] sm:text-[1.25em] leading-[130%] text-primary-text font-vitruv">
             I help businesses grow their revenue through thoughtful & targeted leads. Heck, I even wrote a <b>book on it.</b><br/>
             How it works is everyday, I read through hundreds of publications. I look to find any company who raised money and I then analyze what type of services they need.<br/>
             Sounds easy, right. Well it's not actually. Because what I do is not just label what kind of company just raised money. I look to see what their tech stack includes, and most importantly to you - <b>not</b> include.
           </p>
-          <p class="text-[1.25em] leading-[130%] text-primary-text font-vitruv">
+          <p class="text-[.75em] sm:text-[1.25em] leading-[130%] text-primary-text font-vitruv">
             What these companies don't have in their tech stack today, is exactly the opportunity for you. So if they don't have a CMS. That's a great lead for companies that sell CMS and/or hosting services. Also, this isn't just for tech. I look to see if they have a strong marketing presence, because that might be a lead for a marketers to sell to them - or SEO ranking for those SEO companies out there - and much much more.
           </p>
-          <p class="text-[1.25em] leading-[130%] text-primary-text font-vitruv">
+          <p class="text-[.75em] sm:text-[1.25em] leading-[130%] text-primary-text font-vitruv">
             Needless to say, there is a lot of work that goes into this. But that's also why I can provide you arguably some of the best leads in the industry. Let me help you grow your business. There's lots of people <b>who've seen great results.</b>
           </p>
-          <p class="text-[1.25em] leading-[130%] text-primary-text font-vitruv">
+          <p class="text-[.75em] sm:text-[1.25em] leading-[130%] text-primary-text font-vitruv">
             Fill free to contact me, I'd enjoy hearing from you..
           </p>
         </div>
       </div>
     </section>
-    <section class="bg-secondary-bg py-[6.25em]">
+    <section class="bg-secondary-bg py-[3.125em] sm:py-[6.25em]">
       <div class="container">
         <div class="max-w-[40.875em] mx-auto flex flex-col gap-[1.25em] text-center">
-          <h2 class="section-title">Save Time & Money.<br/>Increase Revenue.</h2>
-          <p class="section-subtitle">We spend literally 10's of thousands dollars and 100s of hours, every month, gathering your curated leads.</p>
+          <h2 class="section-title" data-aos="fade-up" data-aos-duration="500">Save Time & Money.<br/>Increase Revenue.</h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-duration="500">We spend literally 10's of thousands dollars and 100s of hours, every month, gathering your curated leads.</p>
         </div>
-        <div class="mt-[2em] grid grid-cols-3 gap-[1.25em] max-w-[63.625em] mx-auto">
-          <div class="border border-primary-text p-[1.25em] rounded-[1em] bg-white">
-            <svg class="size-[3.75em] text-primary-btn mb-[5em]" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="mt-[2em] grid grid-cols-2 sm:grid-cols-3 gap-[1.25em] max-w-[63.625em] mx-auto">
+          <div class="border border-primary-text p-[1.25em] rounded-[1em] bg-white" data-aos="fade-up" data-aos-duration="500">
+            <svg class="size-[1.875em] sm:size-[3.75em] text-primary-btn mb-[1.5em] sm:mb-[5em]" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M25.8758 22.3623L44.3383 31.0373L42.9008 44.9998L39.7508 46.5873C38.4296 47.2726 36.9795 47.6734 35.4939 47.7638C34.0083 47.8543 32.5203 47.6323 31.1258 47.1123L29.2508 46.4123C27.4961 45.7566 25.6043 45.5545 23.7508 45.8248L20.7633 46.2498C20.0912 46.3444 19.406 46.2549 18.7808 45.9907C18.1557 45.7266 17.6139 45.2977 17.2133 44.7498C17.1083 44.6008 17.0372 44.4306 17.0049 44.2513C16.9726 44.0719 16.9799 43.8876 17.0264 43.7113C17.0728 43.5351 17.1573 43.3711 17.2738 43.2309C17.3903 43.0907 17.536 42.9777 17.7008 42.8998L24.2383 39.8623L16.1758 33.8123L25.8758 22.3623Z" fill="white" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M12.9255 48.2374L7.50047 52.1124C7.39434 52.1836 7.26895 52.2205 7.14119 52.2182C7.01343 52.216 6.88944 52.1746 6.78593 52.0997C6.68241 52.0247 6.60434 51.9199 6.56224 51.7993C6.52014 51.6786 6.51603 51.548 6.55047 51.4249L8.32547 44.9999C8.36392 44.8643 8.42752 44.7371 8.51297 44.6249L33.9755 8.74991C34.1666 8.48043 34.4567 8.29759 34.7823 8.24138C35.1079 8.18516 35.4425 8.26014 35.713 8.44991L38.388 10.3499C38.6606 10.5311 38.8512 10.8119 38.919 11.1321C38.9868 11.4523 38.9263 11.7863 38.7505 12.0624L13.2255 47.9499C13.1422 48.0618 13.0408 48.159 12.9255 48.2374Z" fill="white"/>
               <path d="M10.388 47.4999C10.4348 47.3537 10.5021 47.2148 10.588 47.0874L37.263 9.51242L35.713 8.41242C35.5768 8.3203 35.4238 8.25594 35.2627 8.22304C35.1016 8.19014 34.9356 8.18934 34.7742 8.22069C34.6128 8.25204 34.4592 8.31492 34.3221 8.40574C34.185 8.49655 34.0673 8.61351 33.9755 8.74992L8.51297 44.5999C8.42752 44.7121 8.36392 44.8393 8.32547 44.9749L6.48797 51.4249C6.45353 51.548 6.45764 51.6786 6.49974 51.7993C6.54184 51.9199 6.61991 52.0248 6.72343 52.0997C6.82694 52.1746 6.95093 52.216 7.07869 52.2183C7.20645 52.2205 7.33184 52.1836 7.43797 52.1124L9.36297 50.7499L10.388 47.4999Z" fill="white"/>
@@ -407,23 +415,23 @@
               <path d="M23.4869 33.4748L14.1869 38.0623C13.598 38.3554 13.1483 38.8688 12.9354 39.4912C12.7224 40.1136 12.7634 40.7949 13.0494 41.3873C13.6198 42.5459 14.6162 43.4388 15.8302 43.8792C17.0441 44.3196 18.3814 44.2732 19.5619 43.7498L22.9744 42.1998C23.6274 41.8971 24.3444 41.7582 25.0632 41.7952C25.782 41.8323 26.481 42.0441 27.0994 42.4123L28.0994 42.9998C32.245 45.4321 37.1592 46.2005 41.8494 45.1498C43.4821 44.789 45.1845 44.9106 46.7494 45.4998L52.5744 47.7123C52.7645 47.7856 52.9696 47.8114 53.1719 47.7874C53.3742 47.7634 53.5676 47.6902 53.7352 47.5744C53.9027 47.4586 54.0395 47.3035 54.1335 47.1228C54.2275 46.942 54.2758 46.741 54.2744 46.5373V34.0373C54.2744 33.7058 54.1427 33.3878 53.9083 33.1534C53.6739 32.919 53.3559 32.7873 53.0244 32.7873H51.9744C49.3216 32.785 46.7016 32.2004 44.2994 31.0748L29.9994 24.2998L23.4869 33.4748Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <div class="flex flex-col gap-2 text-primary-text">
-              <p class="font-medium text-[1.25em]">100% Handpicked Leads</p>
-              <p class="font-vitruv leading-[130%]">Every data points and leads is collected and verified by a human. Not robot. No AI.</p>
+              <p class="font-medium text-[1em] sm:text-[1.25em]">100% Handpicked Leads</p>
+              <p class="font-vitruv text-[.75em] sm:text-[1em] leading-[130%]">Every data points and leads is collected and verified by a human. Not robot. No AI.</p>
             </div>
           </div>
-          <div class="border border-primary-text p-[1.25em] rounded-[1em] bg-white">
-            <svg class="size-[3.75em] text-primary-btn mb-[5em]" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="border border-primary-text p-[1.25em] rounded-[1em] bg-white" data-aos="fade-up" data-aos-duration="500">
+            <svg class="size-[1.875em] sm:size-[3.75em] text-primary-btn mb-[1.5em] sm:mb-[5em]" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.7784 24.9376C19.4118 24.9376 20.9784 24.2887 22.1335 23.1336M17.7784 24.9376C16.1449 24.9376 14.5783 24.2887 13.4232 23.1336M17.7784 24.9376V29.5569M22.1335 23.1336C23.2885 21.9785 23.9374 20.4119 23.9374 18.7784M22.1335 23.1336L25.3992 26.3993M23.9374 18.7784C23.9374 17.145 23.2885 15.5784 22.1335 14.4233M23.9374 18.7784H28.5567M22.1335 14.4233C20.9784 13.2682 19.4118 12.6193 17.7784 12.6193M22.1335 14.4233L25.3992 11.1576M17.7784 12.6193C16.1449 12.6193 14.5783 13.2682 13.4232 14.4233M17.7784 12.6193V8M13.4232 14.4233C12.2682 15.5784 11.6193 17.145 11.6193 18.7784M13.4232 14.4233L10.1575 11.1576M11.6193 18.7784C11.6193 20.4119 12.2682 21.9785 13.4232 23.1336M11.6193 18.7784H7M13.4232 23.1336L10.1575 26.3993M16.7519 8H18.8049M24.6745 10.4308L26.1259 11.8823M28.5567 17.7519V19.805M26.1259 25.6746L24.6745 27.1261M18.8049 29.5569H16.7519M10.8823 27.1261L9.43078 25.6746M7 19.805V17.7519M9.43078 11.8823L10.8823 10.4308M42.6179 24.373C43.9557 25.5075 45.0418 26.909 45.8064 28.4877C46.5711 30.0664 46.9976 31.7874 47.0585 33.5405C47.1193 35.2936 46.8133 37.0401 46.16 38.668C45.5067 40.2959 44.5205 41.7694 43.2646 42.994C40.8102 45.3898 37.5164 46.731 34.0865 46.731C30.6567 46.731 27.3629 45.3898 24.9085 42.994C23.4399 41.5533 22.3423 39.7781 21.7099 37.8204" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M38.5228 28.3842C38.1726 28.7269 37.702 28.9189 37.212 28.9189C36.7219 28.9189 36.2514 28.7269 35.9011 28.3842L33.2856 25.8097C33.1136 25.6423 32.9769 25.4422 32.8836 25.2211C32.7903 25 32.7422 24.7625 32.7422 24.5225C32.7422 24.2825 32.7903 24.0449 32.8836 23.8239C32.9769 23.6028 33.1136 23.4026 33.2856 23.2352L41.1527 15.5076C41.5035 15.1659 41.9739 14.9746 42.4636 14.9746C42.9533 14.9746 43.4237 15.1659 43.7745 15.5076L46.3962 18.0842C46.5681 18.2515 46.7048 18.4517 46.7981 18.6728C46.8915 18.8939 46.9396 19.1314 46.9396 19.3714C46.9396 19.6114 46.8915 19.8489 46.7981 20.07C46.7048 20.2911 46.5681 20.4913 46.3962 20.6587L38.5228 28.3842Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M44.7166 16.4395L50.0339 11.118M50.0339 11.118L47.0673 8.15137M50.0339 11.118L53.0005 14.0846M17.2656 37.8198H27.6498M18.8834 52.653H47.0673M33.7165 46.7197V52.653" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <div class="flex flex-col gap-2 text-primary-text">
-              <p class="font-medium text-[1.25em]">100s of hours on research</p>
-              <p class="font-vitruv leading-[130%]">We spend every month 100s of hours to research these handpicked curalated leads for you..</p>
+              <p class="font-medium text-[1em] sm:text-[1.25em]">100s of hours on research</p>
+              <p class="font-vitruv text-[.75em] sm:text-[1em] leading-[130%]">We spend every month 100s of hours to research these handpicked curalated leads for you..</p>
             </div>
           </div>
-          <div class="border border-primary-text p-[1.25em] rounded-[1em] bg-white">
-            <svg class="size-[3.75em] text-primary-btn mb-[5em]" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="border border-primary-text p-[1.25em] rounded-[1em] bg-white" data-aos="fade-up" data-aos-duration="500">
+            <svg class="size-[1.875em] sm:size-[3.75em] text-primary-btn mb-[1.5em] sm:mb-[5em]" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M30.25 16C34.9991 16 39.5515 19.9084 42.9951 25.4785C46.407 30.9975 48.4999 37.7961 48.5 42.9121C48.5 45.4276 47.9904 47.2064 47.1553 48.4873C46.3257 49.7596 45.1126 50.6372 43.5225 51.2422C40.2554 52.4853 35.6596 52.5 30.25 52.5C24.8404 52.5 20.2446 52.4853 16.9775 51.2422C15.3874 50.6372 14.1743 49.7596 13.3447 48.4873C12.5096 47.2064 12 45.4276 12 42.9121C12.0001 37.8405 14.093 31.0419 17.5059 25.5107C20.9508 19.9277 25.5029 16 30.25 16Z" fill="white" stroke="currentColor" stroke-width="2"/>
               <path d="M46.9688 33.4287C48.1272 36.8182 48.7499 40.1912 48.75 43.0371C48.75 45.6174 48.2217 47.4989 47.3125 48.8838C46.4059 50.2647 45.0885 51.2003 43.418 51.834C40.0342 53.1175 35.3292 53.125 30 53.125C24.6714 53.125 19.9651 53.118 16.5693 51.8447C14.8922 51.2158 13.565 50.2871 12.6465 48.917C11.7263 47.5443 11.184 45.6803 11.1621 43.125C11.1621 42.4447 11.2199 41.7633 11.3008 41.0557C12.8147 43.3723 15.604 44.8711 18.4375 45.7881C21.6602 46.831 25.0936 47.1742 27.1924 47.0635L27.5938 47.0352H27.5967C28.8121 46.9205 29.4933 46.6012 29.8799 45.9932C30.054 45.7192 30.1462 45.4176 30.2207 45.1592C30.2996 44.8857 30.3645 44.6386 30.4795 44.375C30.8739 43.471 31.9511 42.1656 36.9307 40.9648L37.9795 40.7266L37.9824 40.7256C42.2254 39.7877 44.6094 38.0701 45.8711 36.1602C46.4724 35.2498 46.8041 34.3135 46.9688 33.4287Z" fill="white" stroke="currentColor"/>
               <path d="M35.1624 37.9623C34.8124 36.2123 33.3249 35.6873 31.7499 35.5998V33.1498C32.1874 33.3248 32.7124 33.5873 33.0624 33.8498C33.7624 34.2873 34.4624 33.1498 33.7624 32.7123C33.1499 32.3623 32.4499 32.0123 31.7499 31.7498V28.8623C31.7499 27.9873 30.4374 27.9873 30.4374 28.8623V31.3998C29.7374 31.3123 29.0374 31.3123 28.3374 31.3998C28.2499 30.7873 28.0749 30.1748 27.8999 29.5623C27.7249 28.6873 26.4124 29.0373 26.6749 29.9123C26.8499 30.5248 26.9374 31.1373 27.1124 31.7498C27.0249 31.7498 27.0249 31.7498 26.9374 31.8373C25.1874 32.5373 24.0499 34.2873 25.3624 35.9498C25.9749 36.7373 26.7624 36.9998 27.6374 37.1748C27.7249 38.3123 27.7249 39.4498 27.7249 40.5873C27.1124 40.2373 26.5874 39.7123 26.1499 39.2748C25.5374 38.6623 24.6624 39.6248 25.1874 40.2373C25.9749 41.1123 26.8499 41.7248 27.7249 42.1623C27.7249 43.1248 27.8124 44.0873 27.8999 45.0498C27.9874 45.9248 29.2999 45.9248 29.2124 45.0498C29.1249 44.1748 29.0374 43.3873 29.0374 42.5123C29.5624 42.5998 30.0874 42.5998 30.6124 42.5998C30.6999 43.4748 30.7874 44.3498 30.8749 45.3123C30.9624 46.1873 32.2749 46.1873 32.1874 45.3123C32.0999 44.3498 32.0124 43.3873 31.9249 42.3373C33.8499 41.6373 35.5999 40.1498 35.1624 37.9623ZM30.4374 32.7123V35.5998C29.9999 35.5998 29.6499 35.6873 29.2999 35.6873H28.8624L28.5999 32.5373C29.2124 32.5373 29.8249 32.6248 30.4374 32.7123ZM27.2874 35.5123C26.9374 35.4248 26.5874 35.1623 26.2374 34.8998C25.4499 34.1123 26.5874 33.4123 27.2874 33.0623C27.3749 33.9373 27.4624 34.7248 27.5499 35.5998C27.4624 35.5998 27.3749 35.5998 27.2874 35.5123ZM30.1749 41.1123C29.7374 41.1998 29.3874 41.1123 29.0374 41.0248C28.9499 39.7123 28.9499 38.3998 28.9499 36.9998C29.4749 36.9998 29.9999 36.9123 30.5249 36.9123C30.5249 38.3123 30.6124 39.6248 30.6124 41.0248C30.4374 41.1123 30.3499 41.1123 30.1749 41.1123ZM33.0624 40.1498C32.7124 40.4123 32.2749 40.5873 31.9249 40.7623C31.8374 39.4498 31.8374 38.2248 31.8374 36.9123H32.2749C33.9374 37.2623 34.3749 39.0998 33.0624 40.1498Z" fill="currentColor"/>
@@ -446,21 +454,21 @@
               <path d="M47.8497 47.8498L47.7622 50.4748L50.8247 49.5998L50.9122 46.7998C50.9122 46.8873 49.0747 47.5873 47.8497 47.8498ZM45.5747 53.0998V55.6373L48.9872 54.5873V51.9623C48.8997 51.8748 48.0247 52.3998 45.5747 53.0998ZM12.2372 53.7998L12.4997 56.2498L9.43721 55.5498L9.26221 53.0123C9.17471 53.0123 10.3997 53.4498 12.2372 53.7998Z" fill="currentColor"/>
             </svg>
             <div class="flex flex-col gap-2 text-primary-text">
-              <p class="font-medium text-[1.25em]">10,000s of dollars on tech</p>
-              <p class="font-vitruv leading-[130%]">We spend a lot of money sourcing from the carious publications this information.</p>
+              <p class="font-medium text-[1em] sm:text-[1.25em]">10,000s of dollars on tech</p>
+              <p class="font-vitruv text-[.75em] sm:text-[1em] leading-[130%]">We spend a lot of money sourcing from the carious publications this information.</p>
             </div>
           </div>
-          <div class="border border-primary-text p-[1.25em] rounded-[1em] bg-white">
-            <svg class="size-[3.75em] text-primary-btn mb-[5em]" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="border border-primary-text p-[1.25em] rounded-[1em] bg-white" data-aos="fade-up" data-aos-duration="500">
+            <svg class="size-[1.875em] sm:size-[3.75em] text-primary-btn mb-[1.5em] sm:mb-[5em]" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M37.5004 25L27.5004 35L22.5004 30M33.1154 8.6475L36.1679 11.2475C36.9379 11.9025 37.8929 12.2975 38.8979 12.38L42.8979 12.7C44.0348 12.7908 45.1022 13.2834 45.909 14.0897C46.7157 14.896 47.2089 15.9631 47.3004 17.1L47.6179 21.1C47.7004 22.1075 48.0979 23.065 48.7529 23.8325L51.3529 26.8825C52.0939 27.7512 52.5009 28.8557 52.5009 29.9975C52.5009 31.1393 52.0939 32.2438 51.3529 33.1125L48.7529 36.165C48.0979 36.935 47.7004 37.89 47.6204 38.8975L47.3004 42.8975C47.2096 44.0344 46.7169 45.1019 45.9107 45.9086C45.1044 46.7153 44.0372 47.2086 42.9004 47.3L38.9004 47.62C37.8933 47.6997 36.9371 48.0952 36.1679 48.75L33.1154 51.35C32.2466 52.091 31.1422 52.498 30.0004 52.498C28.8585 52.498 27.7541 52.091 26.8854 51.35L23.8354 48.75C23.0655 48.0947 22.1083 47.6992 21.1004 47.62L17.1004 47.3C15.9631 47.2085 14.8956 46.7149 14.0893 45.9076C13.283 45.1004 12.7906 44.0324 12.7004 42.895L12.3804 38.8975C12.2994 37.891 11.9031 36.9357 11.2479 36.1675L8.64787 33.1125C7.90819 32.2441 7.50195 31.1407 7.50195 30C7.50195 28.8593 7.90819 27.7559 8.64787 26.8875L11.2479 23.8325C11.9054 23.0625 12.2979 22.1075 12.3779 21.1L12.6979 17.1025C12.7889 15.9644 13.2826 14.896 14.0904 14.0891C14.8982 13.2822 15.9672 12.7897 17.1054 12.7L21.1004 12.3825C22.1077 12.302 23.064 11.9057 23.8329 11.25L26.8854 8.65C27.7541 7.909 28.8585 7.50195 30.0004 7.50195C31.1422 7.50195 32.2466 7.9065 33.1154 8.6475Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <div class="flex flex-col gap-2 text-primary-text">
-              <p class="font-medium text-[1.25em]">Publicly available & verified</p>
-              <p class="font-vitruv leading-[130%]">All of this is personally verified by a real human. That take a lot of work.</p>
+              <p class="font-medium text-[1em] sm:text-[1.25em]">Publicly available & verified</p>
+              <p class="font-vitruv text-[.75em] sm:text-[1em] leading-[130%]">All of this is personally verified by a real human. That take a lot of work.</p>
             </div>
           </div>
-          <div class="border border-primary-text p-[1.25em] rounded-[1em] bg-white">
-            <svg class="size-[3.75em] text-primary-btn mb-[5em]" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="border border-primary-text p-[1.25em] rounded-[1em] bg-white" data-aos="fade-up" data-aos-duration="500">
+            <svg class="size-[1.875em] sm:size-[3.75em] text-primary-btn mb-[1.5em] sm:mb-[5em]" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M30 3.375C32.4243 3.375 34.7554 4.27795 36.5439 5.89746L36.8945 6.23047C38.723 8.05895 39.75 10.5391 39.75 13.125V15.375H39V13.125C39 10.7381 38.0521 8.44857 36.3643 6.76074C34.6764 5.07291 32.3869 4.125 30 4.125C27.6131 4.125 25.3236 5.07291 23.6357 6.76074C21.9479 8.44857 21 10.7381 21 13.125V15.375H20.25V13.125C20.25 10.7007 21.1529 8.36961 22.7725 6.58105L23.1055 6.23047C24.8197 4.51625 27.1067 3.50625 29.5166 3.38672L30 3.375Z" fill="white" stroke="currentColor" stroke-width="3"/>
               <path d="M16.875 16.5H43.125C45.0829 16.5 46.9656 17.2292 48.4102 18.5371L48.6934 18.8066C50.1702 20.2835 51 22.2864 51 24.375V43.125C51 45.2136 50.1702 47.2165 48.6934 48.6934C47.2165 50.1702 45.2136 51 43.125 51H16.875C14.9171 51 13.0344 50.2708 11.5898 48.9629L11.3066 48.6934C9.82979 47.2165 9 45.2136 9 43.125V24.375C9 22.4171 9.72922 20.5344 11.0371 19.0898L11.3066 18.8066C12.6912 17.4221 14.538 16.6064 16.4844 16.5098L16.875 16.5Z" fill="white" stroke="currentColor" stroke-width="3"/>
               <mask id="path-3-inside-1_478_13769" fill="white">
@@ -471,228 +479,228 @@
               <path d="M30 30.5C30.8082 30.5 31.5854 30.8009 32.1816 31.3408L32.2979 31.4521C32.9073 32.0616 33.25 32.888 33.25 33.75C33.25 34.5582 32.9491 35.3354 32.4092 35.9316L32.2979 36.0479C31.6884 36.6573 30.862 37 30 37C29.1918 37 28.4146 36.6991 27.8184 36.1592L27.7021 36.0479C27.0927 35.4384 26.75 34.612 26.75 33.75C26.75 32.9418 27.0509 32.1646 27.5908 31.5684L27.7021 31.4521C28.2736 30.8807 29.0356 30.5437 29.8389 30.5039L30 30.5Z" fill="currentColor" stroke="currentColor"/>
             </svg>              
             <div class="flex flex-col gap-2 text-primary-text">
-              <p class="font-medium text-[1.25em]">GDPR compliant</p>
-              <p class="font-vitruv leading-[130%]">Up to date with all the key privacy and data protection requirements.</p>
+              <p class="font-medium text-[1em] sm:text-[1.25em]">GDPR compliant</p>
+              <p class="font-vitruv text-[.75em] sm:text-[1em] leading-[130%]">Up to date with all the key privacy and data protection requirements.</p>
             </div>
           </div>
-          <div class="border border-primary-text p-[1.25em] rounded-[1em] bg-white">
-            <svg class="size-[3.75em] text-primary-btn mb-[5em]" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="border border-primary-text p-[1.25em] rounded-[1em] bg-white" data-aos="fade-up" data-aos-duration="500">
+            <svg class="size-[1.875em] sm:size-[3.75em] text-primary-btn mb-[1.5em] sm:mb-[5em]" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M52.9292 31.8266C52.5798 36.2162 50.9778 40.4134 48.3133 43.9194C45.6488 47.4253 42.034 50.0928 37.8981 51.6047C33.7623 53.1167 29.2794 53.4096 24.982 52.4488C20.6846 51.4879 16.7533 49.3136 13.6553 46.1842C10.5572 43.0548 8.42255 39.1019 7.50493 34.795C6.58732 30.4881 6.9253 26.0083 8.47874 21.8878C10.0322 17.7673 12.7358 14.1794 16.2683 11.5503C19.8008 8.92116 24.0138 7.36134 28.4067 7.05615" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M39.8723 33.8582C39.2333 35.5029 38.1944 36.9624 36.8495 38.1048C35.5047 39.2471 33.8963 40.0361 32.1699 40.4006C30.4434 40.7651 28.6534 40.6935 26.9616 40.1922C25.2698 39.691 23.7296 38.776 22.4803 37.5299C21.231 36.2838 20.312 34.746 19.8064 33.0554C19.3009 31.3649 19.2246 29.575 19.5847 27.8476C19.9447 26.1202 20.7296 24.5098 21.8684 23.162C23.0073 21.8142 24.4641 20.7716 26.1072 20.1283M29.9996 30.0011L38.8461 21.1545M38.8461 21.1545L45.9232 22.9238L53.0004 15.8466L45.9232 14.0773L44.154 7L37.0768 14.0773L38.8461 21.1545Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <div class="flex flex-col gap-2 text-primary-text">
-              <p class="font-medium text-[1.25em]">Up to date & accurate</p>
-              <p class="font-vitruv leading-[130%]">You’re getting the information updated every month. So you have the refreshest of leads.</p>
+              <p class="font-medium text-[1em] sm:text-[1.25em]">Up to date & accurate</p>
+              <p class="font-vitruv text-[.75em] sm:text-[1em] leading-[130%]">You’re getting the information updated every month. So you have the refreshest of leads.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="bg-primary-bg py-[6.25em]">
+    <section class="bg-primary-bg py-[3.125em] sm:py-[6.25em]" id="pricing">
       <div class="container">
         <div class="max-w-[42em] mx-auto flex flex-col gap-[1.25em] text-center">
-          <h2 class="section-title">Make your money back<br/>& jumpstart sales</h2>
-          <p class="section-subtitle">Even a tiny deal can make your money back for years</p>
+          <h2 class="section-title" data-aos="fade-up" data-aos-duration="500">Make your money back<br/>& jumpstart sales</h2>
+          <p class="section-subtitle" data-aos="fade-up" data-aos-duration="500">Even a tiny deal can make your money back for years</p>
         </div>
-        <div class="mt-[2em] grid grid-cols-4 gap-[1.3125em]">
-          <div class="border border-primary-text rounded-[1em] bg-white">
-            <div class="p-[2em] border-b border-primary-text flex flex-col justify-between min-h-[18.5em]">
+        <div class="mt-[1.5em] sm:mt-[2em] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-[1.3125em]" data-aos="fade-up" data-aos-duration="500">
+          <div class="border border-primary-text rounded-[1em] bg-white max-w-[19em] sm:max-w-none mx-auto sm:mx-0">
+            <div class="p-[1em] sm:p-[2em] border-b border-primary-text flex flex-col justify-between min-h-0 sm:min-h-[18.5em]">
               <div class="flex flex-col gap-[1em]">
                 <div class="flex justify-between items-center min-h-[1.625em]">
-                  <span class="font-vitruv text-[1.25em] leading-[120%]">FREE</span>
+                  <span class="font-vitruv text-[.75em] sm:text-[1.25em] leading-[120%]">FREE</span>
                   <!-- <span class="py-1 px-3 border border-primary-btn rounded-[1em] font-medium text-primary-btn">Popular</span> -->
                 </div>
                 <div class="flex gap-1 items-end">
-                  <span class="text-[3.75em] font-medium leading-[120%]">$0</span>
-                  <span class="text-[1.125em] leading-[140%]">per month</span>
+                  <span class="text-[2.5em] sm:text-[3.75em] font-medium leading-[120%]">$0</span>
+                  <span class="text-[.75em] sm:text-[1.125em] leading-[140%]">per month</span>
                 </div>
               </div>
-              <a href="#" class="bg-primary-btn text-white text-center py-[.75em] rounded-[.5em] font-medium leading-[100%]">Choose Plan</a>
+              <a href="#" class="bg-primary-btn text-white text-center py-[.75em] mt-[2em] rounded-[.5em] font-medium leading-[100%]">Choose Plan</a>
             </div>
-            <div class="p-[2em] flex flex-col gap-[1.5em]">
+            <div class="p-[1em] sm:p-[2em] flex flex-col gap-[1.5em]">
               <span class="font-medium leading-[100%]">FEATURES</span>
               <ul class="features-list">
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Limited to 10 free leads, every week</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Funded startup list</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Hiring companies list</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">25+ data points per company</p></li>
-                <li class="excluded"><p class="font-vitruv text-[1.125em] leading-[140%]">Contact Infomation</p></li>
-                <li class="excluded"><p class="font-vitruv text-[1.125em] leading-[140%]">Likely to outsource filed</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Limited to 10 free leads, every week</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Funded startup list</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Hiring companies list</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">25+ data points per company</p></li>
+                <li class="excluded"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Contact Infomation</p></li>
+                <li class="excluded"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Likely to outsource filed</p></li>
               </ul>
             </div>
           </div>
-          <div class="border border-primary-text rounded-[1em] bg-white">
-            <div class="p-[2em] border-b border-primary-text flex flex-col justify-between min-h-[18.5em]">
+          <div class="border border-primary-text rounded-[1em] bg-white max-w-[19em] sm:max-w-none mx-auto sm:mx-0">
+            <div class="p-[1em] sm:p-[2em] border-b border-primary-text flex flex-col justify-between min-h-0 sm:min-h-[18.5em]">
               <div class="flex flex-col gap-[1em]">
                 <div class="flex justify-between items-center min-h-[1.625em]">
-                  <span class="font-vitruv text-[1.25em] leading-[120%]">BASIC</span>
-                  <span class="py-1 px-3 border border-primary-btn rounded-[1em] font-medium text-primary-btn">Popular</span>
+                  <span class="font-vitruv text-[.75em] sm:text-[1.25em] leading-[120%]">BASIC</span>
+                  <span class="py-[.25em] px-[.75em] leading-[100%] border border-primary-btn rounded-[1em] font-medium text-primary-btn">Popular</span>
                 </div>
                 <div class="flex gap-1 items-end">
-                  <span class="text-[3.75em] font-medium leading-[120%]">$249</span>
-                  <span class="text-[1.125em] leading-[140%]">per month</span>
+                  <span class="text-[2.5em] sm:text-[3.75em] font-medium leading-[120%]">$249</span>
+                  <span class="text-[.75em] sm:text-[1.125em] leading-[140%]">per month</span>
                 </div>
-                <span class="font-vitruv text-[1.25em] leading-[120%]">Billed Yearly</span>
+                <span class="font-vitruv text-[.75em] sm:text-[1.25em] leading-[120%]">Billed Yearly</span>
               </div>
-              <a href="#" class="bg-primary-btn text-white text-center py-[.75em] rounded-[.5em] font-medium leading-[100%]">Choose Plan</a>
+              <a href="#" class="bg-primary-btn text-white text-center py-[.75em] mt-[2em] rounded-[.5em] font-medium leading-[100%]">Choose Plan</a>
             </div>
-            <div class="p-[2em] flex flex-col gap-[1.5em]">
+            <div class="p-[1em] sm:p-[2em] flex flex-col gap-[1.5em]">
               <span class="font-medium leading-[100%]">FEATURES</span>
               <ul class="features-list">
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">1,500+ leads at sign-up</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">100s of new leads every month</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Funded startup list</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Hiring company list</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">All data points per company (50+)</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Contact Information</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Likely to outsource field</p></li>
-                <li class="excluded"><p class="font-vitruv text-[1.125em] leading-[140%]">Linkedin account data (1,000s)</p></li>
-                <li class="excluded"><p class="font-vitruv text-[1.125em] leading-[140%]">Verified Email Addresses</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">1,500+ leads at sign-up</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">100s of new leads every month</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Funded startup list</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Hiring company list</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">All data points per company (50+)</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Contact Information</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Likely to outsource field</p></li>
+                <li class="excluded"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Linkedin account data (1,000s)</p></li>
+                <li class="excluded"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Verified Email Addresses</p></li>
               </ul>
             </div>
           </div>
-          <div class="border border-primary-text rounded-[1em] bg-white">
-            <div class="p-[2em] border-b border-primary-text flex flex-col justify-between min-h-[18.5em]">
+          <div class="border border-primary-text rounded-[1em] bg-white max-w-[19em] sm:max-w-none mx-auto sm:mx-0">
+            <div class="p-[1em] sm:p-[2em] border-b border-primary-text flex flex-col justify-between min-h-0 sm:min-h-[18.5em]">
               <div class="flex flex-col gap-[1em]">
                 <div class="flex justify-between items-center min-h-[1.625em]">
-                  <span class="font-vitruv text-[1.25em] leading-[120%]">GROWTH</span>
+                  <span class="font-vitruv text-[.75em] sm:text-[1.25em] leading-[120%]">GROWTH</span>
                   <!-- <span class="py-1 px-3 border border-primary-btn rounded-[1em] font-medium text-primary-btn">Popular</span> -->
                 </div>
                 <div class="flex gap-1 items-end">
-                  <span class="text-[3.75em] font-medium leading-[120%]">$749</span>
-                  <span class="text-[1.125em] leading-[140%]">per month</span>
+                  <span class="text-[2.5em] sm:text-[3.75em] font-medium leading-[120%]">$749</span>
+                  <span class="text-[.75em] sm:text-[1.125em] leading-[140%]">per month</span>
                 </div>
-                <span class="font-vitruv text-[1.25em] leading-[120%]">Billed Yearly</span>
+                <span class="font-vitruv text-[.75em] sm:text-[1.25em] leading-[120%]">Billed Yearly</span>
               </div>
-              <a href="#" class="bg-primary-btn text-white text-center py-[.75em] rounded-[.5em] font-medium leading-[100%]">Choose Plan</a>
+              <a href="#" class="bg-primary-btn text-white text-center py-[.75em] mt-[2em] rounded-[.5em] font-medium leading-[100%]">Choose Plan</a>
             </div>
-            <div class="p-[2em] flex flex-col gap-[1.5em]">
+            <div class="p-[1em] sm:p-[2em] flex flex-col gap-[1.5em]">
               <span class="font-medium leading-[100%]">FEATURES</span>
               <ul class="features-list">
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">1,500+ leads at sign-up</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">100s of new leads every month</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Funded startup list</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Hiring company list</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">All data points per company (50+)</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Contact Information</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Likely to outsource field</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Linkedin account data (1,000s)</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Verified Email Addresses</p></li>
-                <li class="excluded"><p class="font-vitruv text-[1.125em] leading-[140%]">Book ($99/value)</p></li>
-                <li class="excluded"><p class="font-vitruv text-[1.125em] leading-[140%]">Training</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">1,500+ leads at sign-up</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">100s of new leads every month</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Funded startup list</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Hiring company list</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">All data points per company (50+)</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Contact Information</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Likely to outsource field</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Linkedin account data (1,000s)</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Verified Email Addresses</p></li>
+                <li class="excluded"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Book ($99/value)</p></li>
+                <li class="excluded"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Training</p></li>
               </ul>
             </div>
           </div>
-          <div class="border border-primary-text rounded-[1em] bg-white">
-            <div class="p-[2em] border-b border-primary-text flex flex-col justify-between min-h-[18.5em]">
+          <div class="border border-primary-text rounded-[1em] bg-white max-w-[19em] sm:max-w-none mx-auto sm:mx-0">
+            <div class="p-[1em] sm:p-[2em] border-b border-primary-text flex flex-col justify-between min-h-0 sm:min-h-[18.5em]">
               <div class="flex flex-col gap-[1em]">
                 <div class="flex justify-between items-center min-h-[1.625em]">
-                  <span class="font-vitruv text-[1.25em] leading-[120%]">GROWTH PLUS</span>
+                  <span class="font-vitruv text-[.75em] sm:text-[1.25em] leading-[120%]">GROWTH PLUS</span>
                   <!-- <span class="py-1 px-3 border border-primary-btn rounded-[1em] font-medium text-primary-btn">Popular</span> -->
                 </div>
                 <div class="flex gap-1 items-end">
-                  <span class="text-[3.75em] font-medium leading-[120%]">$799</span>
-                  <span class="text-[1.125em] leading-[140%]">per month</span>
+                  <span class="text-[2.5em] sm:text-[3.75em] font-medium leading-[120%]">$799</span>
+                  <span class="text-[.75em] sm:text-[1.125em] leading-[140%]">per month</span>
                 </div>
-                <span class="font-vitruv text-[1.25em] leading-[120%]">Billed Yearly</span>
+                <span class="font-vitruv text-[.75em] sm:text-[1.25em] leading-[120%]">Billed Yearly</span>
               </div>
-              <a href="#" class="bg-primary-btn text-white text-center py-[.75em] rounded-[.5em] font-medium leading-[100%]">Choose Plan</a>
+              <a href="#" class="bg-primary-btn text-white text-center py-[.75em] mt-[2em] rounded-[.5em] font-medium leading-[100%]">Choose Plan</a>
             </div>
-            <div class="p-[2em] flex flex-col gap-[1.5em]">
+            <div class="p-[1em] sm:p-[2em] flex flex-col gap-[1.5em]">
               <span class="font-medium leading-[100%]">FEATURES</span>
               <ul class="features-list">
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">1,500+ leads at sign-up</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">100s of new leads every month</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Funded startup list</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Hiring company list</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">All data points per company (50+)</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Contact Information</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Likely to outsource field</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Linkedin account data (1,000s)</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Verified Email Addresses</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Book</p></li>
-                <li class="included"><p class="font-vitruv text-[1.125em] leading-[140%]">Training</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">1,500+ leads at sign-up</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">100s of new leads every month</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Funded startup list</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Hiring company list</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">All data points per company (50+)</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Contact Information</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Likely to outsource field</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Linkedin account data (1,000s)</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Verified Email Addresses</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Book</p></li>
+                <li class="included"><p class="font-vitruv text-[.75em] sm:text-[1.125em] leading-[140%]">Training</p></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="bg-primary-bg py-[6.25em]">
+    <section class="bg-primary-bg py-[3.125em] sm:py-[6.25em]">
       <div class="container">
-        <h2 class="section-title text-center">Frequently ask questions</h2>
-        <div class="mt-[2em] max-w-[63.625em] mx-auto">
+        <h2 class="section-title text-center" data-aos="fade-up" data-aos-duration="500">Frequently ask questions</h2>
+        <div class="mt-[2em] max-w-[63.625em] mx-auto" data-aos="fade-up" data-aos-duration="500">
           <div class="accordion py-[1.25em] border-b border-primary-text cursor-pointer">
             <div class="accordion-top flex justify-between items-center">
-              <p class="text-[1.5em] font-semibold leading-[150%]">Lorem ipsum dolor sit amet consectetur ?</p>
+              <p class="text-[1.125em] sm:text-[1.5em] font-semibold leading-[150%]">Lorem ipsum dolor sit amet consectetur ?</p>
               <div class="relative flex justify-center items-center">
-                <div class="line w-4 h-[1px] bg-primary-text rounded-[1em]"></div>
-                <div class="line abs w-4 h-[1px] bg-primary-text rounded-[1em] absolute rotate-[90deg]"></div>
+                <div class="line w-[1em] h-[1px] bg-primary-text rounded-[1em]"></div>
+                <div class="line abs w-[1em] h-[1px] bg-primary-text rounded-[1em] absolute rotate-[90deg]"></div>
               </div>
             </div>
             <div class="accordion-content pt-[.625em]">
-              <p class="text-[1.375em] text-secondary-text leading-[130%] font-vitruv">Lorem ipsum dolor sit amet consectetur. Eu at tempor nunc in. Vitae morbi magna a commodo odio augue amet integer. Sit felis pellentesque fringilla ipsum.</p>
+              <p class="text-[.875em] sm:text-[1.375em] text-secondary-text leading-[130%] font-vitruv">Lorem ipsum dolor sit amet consectetur. Eu at tempor nunc in. Vitae morbi magna a commodo odio augue amet integer. Sit felis pellentesque fringilla ipsum.</p>
             </div>
           </div>
           <div class="accordion py-[1.25em] border-b border-primary-text cursor-pointer">
             <div class="accordion-top flex justify-between items-center">
-              <p class="text-[1.5em] font-semibold leading-[150%]">Lorem ipsum dolor sit amet consectetur ?</p>
+              <p class="text-[1.125em] sm:text-[1.5em] font-semibold leading-[150%]">Lorem ipsum dolor sit amet consectetur ?</p>
               <div class="relative flex justify-center items-center">
-                <div class="line w-4 h-[1px] bg-primary-text rounded-[1em]"></div>
-                <div class="line abs w-4 h-[1px] bg-primary-text rounded-[1em] absolute rotate-[90deg]"></div>
+                <div class="line w-[1em] h-[1px] bg-primary-text rounded-[1em]"></div>
+                <div class="line abs w-[1em] h-[1px] bg-primary-text rounded-[1em] absolute rotate-[90deg]"></div>
               </div>
             </div>
             <div class="accordion-content pt-[.625em]">
-              <p class="text-[1.375em] text-secondary-text leading-[130%] font-vitruv">Lorem ipsum dolor sit amet consectetur. Eu at tempor nunc in. Vitae morbi magna a commodo odio augue amet integer. Sit felis pellentesque fringilla ipsum.</p>
+              <p class="text-[.875em] sm:text-[1.375em] text-secondary-text leading-[130%] font-vitruv">Lorem ipsum dolor sit amet consectetur. Eu at tempor nunc in. Vitae morbi magna a commodo odio augue amet integer. Sit felis pellentesque fringilla ipsum.</p>
             </div>
           </div>
           <div class="accordion py-[1.25em] border-b border-primary-text cursor-pointer">
             <div class="accordion-top flex justify-between items-center">
-              <p class="text-[1.5em] font-semibold leading-[150%]">Lorem ipsum dolor sit amet consectetur ?</p>
+              <p class="text-[1.125em] sm:text-[1.5em] font-semibold leading-[150%]">Lorem ipsum dolor sit amet consectetur ?</p>
               <div class="relative flex justify-center items-center">
-                <div class="line w-4 h-[1px] bg-primary-text rounded-[1em]"></div>
-                <div class="line abs w-4 h-[1px] bg-primary-text rounded-[1em] absolute rotate-[90deg]"></div>
+                <div class="line w-[1em] h-[1px] bg-primary-text rounded-[1em]"></div>
+                <div class="line abs w-[1em] h-[1px] bg-primary-text rounded-[1em] absolute rotate-[90deg]"></div>
               </div>
             </div>
             <div class="accordion-content pt-[.625em]">
-              <p class="text-[1.375em] text-secondary-text leading-[130%] font-vitruv">Lorem ipsum dolor sit amet consectetur. Eu at tempor nunc in. Vitae morbi magna a commodo odio augue amet integer. Sit felis pellentesque fringilla ipsum.</p>
+              <p class="text-[.875em] sm:text-[1.375em] text-secondary-text leading-[130%] font-vitruv">Lorem ipsum dolor sit amet consectetur. Eu at tempor nunc in. Vitae morbi magna a commodo odio augue amet integer. Sit felis pellentesque fringilla ipsum.</p>
             </div>
           </div>
           <div class="accordion py-[1.25em] border-b border-primary-text cursor-pointer">
             <div class="accordion-top flex justify-between items-center">
-              <p class="text-[1.5em] font-semibold leading-[150%]">Lorem ipsum dolor sit amet consectetur ?</p>
+              <p class="text-[1.125em] sm:text-[1.5em] font-semibold leading-[150%]">Lorem ipsum dolor sit amet consectetur ?</p>
               <div class="relative flex justify-center items-center">
-                <div class="line w-4 h-[1px] bg-primary-text rounded-[1em]"></div>
-                <div class="line abs w-4 h-[1px] bg-primary-text rounded-[1em] absolute rotate-[90deg]"></div>
+                <div class="line w-[1em] h-[1px] bg-primary-text rounded-[1em]"></div>
+                <div class="line abs w-[1em] h-[1px] bg-primary-text rounded-[1em] absolute rotate-[90deg]"></div>
               </div>
             </div>
             <div class="accordion-content pt-[.625em]">
-              <p class="text-[1.375em] text-secondary-text leading-[130%] font-vitruv">Lorem ipsum dolor sit amet consectetur. Eu at tempor nunc in. Vitae morbi magna a commodo odio augue amet integer. Sit felis pellentesque fringilla ipsum.</p>
+              <p class="text-[.875em] sm:text-[1.375em] text-secondary-text leading-[130%] font-vitruv">Lorem ipsum dolor sit amet consectetur. Eu at tempor nunc in. Vitae morbi magna a commodo odio augue amet integer. Sit felis pellentesque fringilla ipsum.</p>
             </div>
           </div>
           <div class="accordion py-[1.25em] border-b border-primary-text cursor-pointer">
             <div class="accordion-top flex justify-between items-center">
-              <p class="text-[1.5em] font-semibold leading-[150%]">Lorem ipsum dolor sit amet consectetur ?</p>
+              <p class="text-[1.125em] sm:text-[1.5em] font-semibold leading-[150%]">Lorem ipsum dolor sit amet consectetur ?</p>
               <div class="relative flex justify-center items-center">
-                <div class="line w-4 h-[1px] bg-primary-text rounded-[1em]"></div>
-                <div class="line abs w-4 h-[1px] bg-primary-text rounded-[1em] absolute rotate-[90deg]"></div>
+                <div class="line w-[1em] h-[1px] bg-primary-text rounded-[1em]"></div>
+                <div class="line abs w-[1em] h-[1px] bg-primary-text rounded-[1em] absolute rotate-[90deg]"></div>
               </div>
             </div>
             <div class="accordion-content pt-[.625em]">
-              <p class="text-[1.375em] text-secondary-text leading-[130%] font-vitruv">Lorem ipsum dolor sit amet consectetur. Eu at tempor nunc in. Vitae morbi magna a commodo odio augue amet integer. Sit felis pellentesque fringilla ipsum.</p>
+              <p class="text-[.875em] sm:text-[1.375em] text-secondary-text leading-[130%] font-vitruv">Lorem ipsum dolor sit amet consectetur. Eu at tempor nunc in. Vitae morbi magna a commodo odio augue amet integer. Sit felis pellentesque fringilla ipsum.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <footer class="bg-white border-t border-primary-text py-[6.25em]">
+    <footer class="bg-white border-t border-primary-text py-[3.125em] sm:py-[6.25em]">
       <div class="container">
         <div class="max-w-[33.1875em] mx-auto flex flex-col gap-[2.5em] items-center text-primary-text">
-          <nav class="flex gap-[3em]">
-            <a href="#" class="text-[1.125em] font-medium leading-[100%]">How it Works</a>
-            <a href="#" class="text-[1.125em] font-medium leading-[100%]">Success Stories</a>
-            <a href="#" class="text-[1.125em] font-medium leading-[100%]">Testimonial</a>
-            <a href="#" class="text-[1.125em] font-medium leading-[100%]">Pricing</a>
+          <nav class="flex flex-wrap justify-center gap-[3em]">
+            <a href="#how" class="text-[1.125em] font-medium leading-[100%]">How it Works</a>
+            <a href="#stories" class="text-[1.125em] font-medium leading-[100%]">Success Stories</a>
+            <a href="#testi" class="text-[1.125em] font-medium leading-[100%]">Testimonial</a>
+            <a href="#pricing" class="text-[1.125em] font-medium leading-[100%]">Pricing</a>
           </nav>
           <div class="flex gap-[2.5em]">
             <a href="" class="size-[1.5em]">
@@ -721,7 +729,7 @@
                 </svg>                                 
             </a>
           </div>
-          <p class="text-[1.125em] font-medium leading-[100%]">© 2025 BigLeads, Inc. All rights reserved.</p>
+          <p class="text-[1.125em] font-medium leading-[100%] text-center">© 2025 BigLeads, Inc. All rights reserved.</p>
         </div>
       </div>
     </footer>

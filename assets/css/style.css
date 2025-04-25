@@ -41,6 +41,9 @@
   font-family: 'Vitruv', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-size: 1.25vw;
@@ -109,6 +112,7 @@ body {
   border-radius :1.25em; 
   overflow: hidden;
   width: 20.3125em;
+  flex-shrink: 0;
 }
 
 .card-testi.active {
@@ -123,6 +127,7 @@ body {
 
 .features-list li {
   padding-left: 2.25em;
+  min-height: 1.5em;
   background-repeat: no-repeat;
   background-size: 1.5em 1.5em;
   background-position: 0 0;
@@ -138,4 +143,32 @@ body {
 
 .excluded {
   background-image: url('../images/cross-icon.svg'); /* Custom cross image */
+}
+
+@media screen and (max-width: 639px) {
+  body {
+    font-size: 2.50391vw;
+  }
+
+  .head-title{
+    font-size: 2.5em;
+  }
+
+  .head-subtitle{
+    font-size: 1em;
+  }
+
+  .section-title{
+    font-size: 1.75em;
+  }
+
+  .section-subtitle{
+    font-size: .875em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 4.26667vw;
+  }
 }

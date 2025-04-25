@@ -13,3 +13,9 @@ $(".accordion").on('click', function(e) {
   $(".accordion").not($(this)).find(".accordion-content").slideUp(500)
   $(".accordion").not($(this)).find(".line.abs").fadeIn(500)
 })
+
+// Aos
+
+AOS.init({
+  once: true,
+});
