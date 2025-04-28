@@ -36,7 +36,9 @@ $("#hamburger").on('click', function(e) {
 })
 
 $("#nav-menu ul li a").on('click', function(e) {
-  $("#hamburger").click()
+  if($("#hamburger").is(':visible')){
+    $("#hamburger").click()
+  }
 })
 
 // Aos
