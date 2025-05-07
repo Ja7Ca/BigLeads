@@ -7,6 +7,7 @@
     <style type="text/tailwindcss">
       @theme {
         --color-primary-btn: #4234F2;
+        --color-primary-btn-hover: #170ca5;
         --color-primary-text: #1D1D1C;
         --color-primary-bg: #FFFDF3;
         --color-secondary-bg: #ECD6B0;
@@ -31,19 +32,21 @@
   </head>
   <body class="">
     <nav class="fixed top-0 left-0 right-0 bg-white sm:py-5 py-[1.75em] border-b border-primary-text flex z-10" data-aos="fade-down" data-aos-duration="500">
-      <div class="container flex justify-between sm:justify-start gap-[6.25em] items-center">
+      <div class="container flex justify-between sm:justify-start gap-[4em] lg:gap-[6.25em] items-center">
         <a href="#" class="sm:w-[6.375em] w-[5.3125em]">
           <img src="./assets/images/logo.png" alt="BigLeads Logo" class="w-full">
         </a>
         <div id="nav-menu" class="bg-white sm:bg-transparent shadow-md sm:shadow-none p-[2em] sm:p-0 hidden sm:flex flex-col sm:flex-row gap-[2.5em] sm:flex justify-between items-start sm:items-center w-full leading-[100%] absolute top-[100%] left-[0%] right-[0%] sm:static">
-          <ul class="flex flex-col sm:flex-row gap-[2.5em] font-medium">
-            <li><a href="#how" class="px-4 py-[.625em] text-[1.125em] text-primary-text">How it Works</a></li>
-            <li><a href="#stories" class="px-4 py-[.625em] text-[1.125em] text-primary-text">Success Stories</a></li>
-            <li><a href="#pricing" class="px-4 py-[.625em] text-[1.125em] text-primary-text">Pricing</a></li>
+          <ul class="flex flex-col sm:flex-row gap-[1.5em] lg:gap-[2.5em] font-medium">
+            <li class="overflow-hidden px-4 py-[.625em] relative"><a href="#how" class="text-[1.125em] text-primary-text after:absolute after:h-[1px] after:bg-primary-btn after:left-[-100%] after:w-[100%] after:bottom-0 after:transition-[left] after:duration-200 hover:after:left-[0%]">How it Works</a></li>
+            <li class="overflow-hidden px-4 py-[.625em] relative"><a href="#stories" class="text-[1.125em] text-primary-text after:absolute after:h-[1px] after:bg-primary-btn after:left-[-100%] after:w-[100%] after:bottom-0 after:transition-[left] after:duration-200 hover:after:left-[0%]">Success Stories</a></li>
+            <li class="overflow-hidden px-4 py-[.625em] relative"><a href="#pricing" class="text-[1.125em] text-primary-text after:absolute after:h-[1px] after:bg-primary-btn after:left-[-100%] after:w-[100%] after:bottom-0 after:transition-[left] after:duration-200 hover:after:left-[0%]">Pricing</a></li>
+            <!-- <li><a href="#stories" class="px-4 py-[.625em] text-[1.125em] text-primary-text">Success Stories</a></li>
+            <li><a href="#pricing" class="px-4 py-[.625em] text-[1.125em] text-primary-text">Pricing</a></li> -->
           </ul>
           <div class="flex gap-2 items-center">
-            <button class="px-4 py-[.625em] font-medium text-[1.125em] cursor-pointer">Sign In</button>
-            <button class="bg-primary-btn text-white px-[1.375em] py-[.75em] font-medium text-[1em] rounded-[0.625em] cursor-pointer">Get Started</button>
+            <button class="px-4 py-[.625em] font-medium text-[1.125em] cursor-pointer rounded-[0.625em] hover:bg-[rgba(0,0,0,.3)]">Sign In</button>
+            <button class="bg-primary-btn text-white px-[1.375em] py-[.75em] font-medium text-[1em] rounded-[0.625em] cursor-pointer hover:bg-primary-btn-hover">Get Started</button>
           </div>
         </div>
         <div id="hamburger" class="flex sm:hidden flex-col gap-1">
@@ -62,12 +65,12 @@
             <form class="mt-[2.25em] flex mx-auto w-full sm:w-[22.8125em] items-center relative" data-aos="fade-up" data-aos-delay="600" data-aos-duration="500">
               <div class="relative w-full">
                 <input type="email" class="text-[.875em] w-full h-[3.8em] pl-[1em] placeholder:text-primary-text text-primary-text bg-white rounded-[.75rem] border border-[#E8E8E8] focus-visible:outline-primary-btn" placeholder="Your Business Email" required/>
-                <button class="bg-primary-btn text-white px-[1.375em] py-[.75em] font-medium text-[1em] rounded-[0.625em] absolute top-[0.375em] right-[0.375em] leading-[100%]">Subscribe</button>
+                <button class="bg-primary-btn text-white px-[1.375em] py-[.75em] font-medium text-[1em] rounded-[0.625em] absolute top-[0.375em] right-[0.375em] leading-[100%] hover:bg-primary-btn-hover">Subscribe</button>
               </div>
               <img src="./assets/images/ornamen-header.png" class="h-[3.375em] sm:h-[6.25em] absolute top-[3.5em] sm:top-[1.5em] left-[-1em] sm:left-[-10em]" />
             </form>
           </div>
-          <img src="./assets/images/head-img.png" class="w-full shadow-md mt-[5em] rounded-[.75em]" data-aos="fade-in" data-aos-duration="500" data-aos-delay="800"/>
+          <img src="./assets/images/head-img.webp" class="w-full shadow-md mt-[5em] rounded-[.75em]" data-aos="fade-in" data-aos-duration="500" data-aos-delay="800"/>
         </div>
       </section>
       <section class="bg-[#FFFDF3] py-[3.125em] sm:py-[6.25em]">
@@ -152,7 +155,7 @@
       </section>
       <section class="bg-tetriary py-[3.125em] sm:pt-[6.875em] sm:pb-[5em]">
         <div class="container relative flex justify-center items-center" data-aos="fade-in" data-aos-duration="500">
-          <img src="./assets/images/banner-sec-vid.png" alt="Banner" class="mx-auto max-w-[66.25em] w-full"/>
+          <img src="./assets/images/banner-sec-vid.webp" alt="Banner" class="mx-auto max-w-[66.25em] w-full"/>
           <div class="absolute size-[3.125em] sm:size-[10em] rounded-full flex items-center justify-center bg-white shadow-lg hover:scale-105 active:scale-95 transition-transform cursor-pointer">
             <svg class="size-[1.5em] sm:size-[5em]" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M26.3532 9.22458C26.3926 9.25082 26.4321 9.27714 26.4717 9.30355L61.1946 32.4521C62.1993 33.1218 63.1308 33.7427 63.8463 34.3197C64.5929 34.9219 65.4731 35.7569 65.9797 36.9784C66.6493 38.593 66.6493 40.4076 65.9797 42.0222C65.4731 43.2438 64.5929 44.0788 63.8463 44.6809C63.1309 45.2579 62.1994 45.8788 61.1947 46.5484L26.3534 69.776C25.1253 70.5948 24.021 71.3311 23.084 71.8389C22.1463 72.3471 20.8592 72.9278 19.357 72.8381C17.4355 72.7234 15.6604 71.7734 14.4991 70.2382C13.5912 69.038 13.3604 67.645 13.2631 66.5829C13.1658 65.5216 13.1659 64.1945 13.166 62.7185L13.166 16.4245C13.166 16.3769 13.166 16.3295 13.166 16.2822C13.1659 14.8062 13.1658 13.479 13.2631 12.4177C13.3604 11.3556 13.5912 9.9626 14.4991 8.76242C15.6604 7.22726 17.4355 6.27729 19.357 6.16256C20.8592 6.07286 22.1463 6.65355 23.084 7.16171C24.021 7.66951 25.1252 8.40578 26.3532 9.22458Z" fill="#2B18D9"/>
@@ -164,7 +167,7 @@
         <div class="container flex flex-col gap-6 text-center items-center">
           <h2 class="section-title" data-aos="fade-up" data-aos-duration="500">Are you a Saas, Sales Rep,<br/>Digital Agency or Freelancer?</h2>
           <p class="section-subtitle" data-aos="fade-up" data-aos-duration="500">BigLeads was created for you.<br/>It'll save you time, money & increase your revenue.</p>
-          <button class="bg-primary-btn text-white px-[2em] sm:px-[1.375em] py-[.75em] font-medium text-[1em] rounded-[0.625em] cursor-pointer mt-2" data-aos="fade-up" data-aos-duration="500">Sign up Now</button>
+          <button class="bg-primary-btn text-white px-[2em] sm:px-[1.375em] py-[.75em] font-medium text-[1em] rounded-[0.625em] cursor-pointer mt-2 hover:bg-primary-btn-hover" data-aos="fade-up" data-aos-duration="500">Sign up Now</button>
         </div>
       </section>
       <section class="bg-primary-bg py-[3.125em] sm:py-[6.25em]" id="how">
@@ -222,7 +225,7 @@
                 <div class="size-[.5em] rounded-full border-1 border-[rgba(0,0,0,.1)] bg-[#60C654]"></div>
               </div>
               <div class="p-2 bg-[rgba(123,142,149,.06)] overflow-hidden relative text-white">
-                <img src="./assets/images/slide1.png" class="w-full rounded-[.75em] object-cover"/>
+                <img src="./assets/images/slide1.webp" class="w-full rounded-[.75em] object-cover"/>
                 <div class="absolute bottom-[1em] sm:bottom-[2em] left-[1em] sm:left-[2em] right-[1em] sm:right-[2em] flex justify-between items-center">
                   <div class="flex flex-col gap-[2px] sm:gap-[.25em]">
                     <div class="flex gap-1">
@@ -258,7 +261,7 @@
                 <div class="size-[.5em] rounded-full border-1 border-[rgba(0,0,0,.1)] bg-[#60C654]"></div>
               </div>
               <div class="p-2 bg-[rgba(123,142,149,.06)] overflow-hidden relative text-white">
-                <img src="./assets/images/slide2.png" class="w-full rounded-[.75em] object-cover"/>
+                <img src="./assets/images/slide2.webp" class="w-full rounded-[.75em] object-cover"/>
                 <div class="absolute bottom-[1em] sm:bottom-[2em] left-[1em] sm:left-[2em] right-[1em] sm:right-[2em] flex justify-between items-center">
                   <div class="flex flex-col gap-[2px] sm:gap-[.25em]">
                     <div class="flex gap-1">
@@ -294,7 +297,7 @@
                 <div class="size-[.5em] rounded-full border-1 border-[rgba(0,0,0,.1)] bg-[#60C654]"></div>
               </div>
               <div class="p-2 bg-[rgba(123,142,149,.06)] overflow-hidden relative text-white">
-                <img src="./assets/images/slide3.png" class="w-full rounded-[.75em] object-cover"/>
+                <img src="./assets/images/slide3.webp" class="w-full rounded-[.75em] object-cover"/>
                 <div class="absolute bottom-[1em] sm:bottom-[2em] left-[1em] sm:left-[2em] right-[1em] sm:right-[2em] flex justify-between items-center">
                   <div class="flex flex-col gap-[2px] sm:gap-[.25em]">
                     <div class="flex gap-1">
@@ -339,9 +342,9 @@
           <div class="flex flex-col items-start gap-[.75em] sm:gap-[1.5em] max-w-[34.125em]">
             <h2 class="section-title" data-aos="fade-up" data-aos-duration="500">We literally wrote the book on Sales Prospecting</h2>
             <p class="section-subtitle" data-aos="fade-up" data-aos-duration="500">We spend literally thousand of dollars, and 100s of hours per</p>
-            <button class="bg-transparent text-primary-btn border border-primary-btn px-[1.255em] py-[.75em] font-medium text-[1em] rounded-[0.625em] cursor-pointer mt-2 leading-[100%]" data-aos="fade-in" data-aos-duration="500">Download E-Book</button>
+            <button class="bg-transparent text-primary-btn border border-primary-btn px-[1.255em] py-[.75em] font-medium text-[1em] rounded-[0.625em] cursor-pointer mt-2 leading-[100%] hover:bg-[rgba(0,0,0,.3)]" data-aos="fade-in" data-aos-duration="500">Download E-Book</button>
           </div>
-          <img src="./assets/images/book.png" class="mx-auto sm:mx-0 max-w-[21.4375em] sm:max-w-[24.25em] w-full shadow-lg rounded-[.75em]" data-aos="fade-left" data-aos-duration="500">
+          <img src="./assets/images/book.webp" class="mx-auto sm:mx-0 max-w-[21.4375em] sm:max-w-[24.25em] w-full shadow-lg rounded-[.75em]" data-aos="fade-left" data-aos-duration="500">
         </div>
       </section>
       <section class="bg-tetriary py-[3.125em] sm:py-[6.25em] overflow-hidden" id="testi">
@@ -506,7 +509,7 @@
             <h2 class="section-title" data-aos="fade-up" data-aos-duration="500">Make your money back<br/>& jumpstart sales</h2>
             <p class="section-subtitle" data-aos="fade-up" data-aos-duration="500">Even a tiny deal can make your money back for years</p>
           </div>
-          <div class="mt-[1.5em] sm:mt-[2em] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-[1.3125em]" data-aos="fade-up" data-aos-duration="500">
+          <div class="mt-[1.5em] sm:mt-[2em] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[1.3125em]" data-aos="fade-up" data-aos-duration="500">
             <div class="border border-primary-text rounded-[1em] bg-white max-w-[19em] sm:max-w-none mx-auto sm:mx-0">
               <div class="p-[1em] sm:p-[2em] border-b border-primary-text flex flex-col justify-between min-h-0 sm:min-h-[18.5em]">
                 <div class="flex flex-col gap-[1em]">
@@ -519,7 +522,7 @@
                     <span class="text-[.75em] sm:text-[1.125em] leading-[140%]">per month</span>
                   </div>
                 </div>
-                <a href="#" class="bg-primary-btn text-white text-center py-[.75em] mt-[2em] rounded-[.5em] font-medium leading-[100%]">Choose Plan</a>
+                <a href="#" class="bg-primary-btn text-white text-center py-[.75em] mt-[2em] rounded-[.5em] font-medium leading-[100%] hover:bg-primary-btn-hover">Choose Plan</a>
               </div>
               <div class="p-[1em] sm:p-[2em] flex flex-col gap-[1.5em]">
                 <span class="font-medium leading-[100%]">FEATURES</span>
@@ -546,7 +549,7 @@
                   </div>
                   <span class="font-vitruv text-[.75em] sm:text-[1.25em] leading-[120%]">Billed Yearly</span>
                 </div>
-                <a href="#" class="bg-primary-btn text-white text-center py-[.75em] mt-[2em] rounded-[.5em] font-medium leading-[100%]">Choose Plan</a>
+                <a href="#" class="bg-primary-btn text-white text-center py-[.75em] mt-[2em] rounded-[.5em] font-medium leading-[100%] hover:bg-primary-btn-hover">Choose Plan</a>
               </div>
               <div class="p-[1em] sm:p-[2em] flex flex-col gap-[1.5em]">
                 <span class="font-medium leading-[100%]">FEATURES</span>
@@ -576,7 +579,7 @@
                   </div>
                   <span class="font-vitruv text-[.75em] sm:text-[1.25em] leading-[120%]">Billed Yearly</span>
                 </div>
-                <a href="#" class="bg-primary-btn text-white text-center py-[.75em] mt-[2em] rounded-[.5em] font-medium leading-[100%]">Choose Plan</a>
+                <a href="#" class="bg-primary-btn text-white text-center py-[.75em] mt-[2em] rounded-[.5em] font-medium leading-[100%] hover:bg-primary-btn-hover">Choose Plan</a>
               </div>
               <div class="p-[1em] sm:p-[2em] flex flex-col gap-[1.5em]">
                 <span class="font-medium leading-[100%]">FEATURES</span>
@@ -608,7 +611,7 @@
                   </div>
                   <span class="font-vitruv text-[.75em] sm:text-[1.25em] leading-[120%]">Billed Yearly</span>
                 </div>
-                <a href="#" class="bg-primary-btn text-white text-center py-[.75em] mt-[2em] rounded-[.5em] font-medium leading-[100%]">Choose Plan</a>
+                <a href="#" class="bg-primary-btn text-white text-center py-[.75em] mt-[2em] rounded-[.5em] font-medium leading-[100%] hover:bg-primary-btn-hover">Choose Plan</a>
               </div>
               <div class="p-[1em] sm:p-[2em] flex flex-col gap-[1.5em]">
                 <span class="font-medium leading-[100%]">FEATURES</span>
@@ -701,10 +704,10 @@
         <div class="container">
           <div class="max-w-[33.1875em] mx-auto flex flex-col gap-[2.5em] items-center text-primary-text">
             <nav class="flex flex-wrap justify-center gap-[3em]">
-              <a href="#how" class="text-[1.125em] font-medium leading-[100%]">How it Works</a>
-              <a href="#stories" class="text-[1.125em] font-medium leading-[100%]">Success Stories</a>
-              <a href="#testi" class="text-[1.125em] font-medium leading-[100%]">Testimonial</a>
-              <a href="#pricing" class="text-[1.125em] font-medium leading-[100%]">Pricing</a>
+              <a href="#how" class="text-[1.125em] font-medium leading-[100%] relative overflow-hidden after:absolute after:h-[1px] after:bg-primary-btn after:left-[-100%] after:w-[100%] after:bottom-0 after:transition-[left] after:duration-200 hover:after:left-[0%]">How it Works</a>
+              <a href="#stories" class="text-[1.125em] font-medium leading-[100%] relative overflow-hidden after:absolute after:h-[1px] after:bg-primary-btn after:left-[-100%] after:w-[100%] after:bottom-0 after:transition-[left] after:duration-200 hover:after:left-[0%]">Success Stories</a>
+              <a href="#testi" class="text-[1.125em] font-medium leading-[100%] relative overflow-hidden after:absolute after:h-[1px] after:bg-primary-btn after:left-[-100%] after:w-[100%] after:bottom-0 after:transition-[left] after:duration-200 hover:after:left-[0%]">Testimonial</a>
+              <a href="#pricing" class="text-[1.125em] font-medium leading-[100%] relative overflow-hidden after:absolute after:h-[1px] after:bg-primary-btn after:left-[-100%] after:w-[100%] after:bottom-0 after:transition-[left] after:duration-200 hover:after:left-[0%]">Pricing</a>
             </nav>
             <div class="flex gap-[2.5em]">
               <a href="" class="size-[1.5em]">
