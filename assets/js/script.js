@@ -22,7 +22,7 @@ $("#hamburger").on('click', function(e) {
     $("#nav-menu").css({
       "display": "flex",
       top: "auto",
-      bottom: "-350%",
+      bottom: "-390%",
     })
     $("body").addClass("overflow-hidden")
   } else {
